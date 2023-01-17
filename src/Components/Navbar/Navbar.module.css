@@ -1,0 +1,58 @@
+.nav_buttons {
+  margin-left: auto;
+  font-size: 20px;
+  width: 30%;
+  position: absolute;
+  right: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 6.5%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.container {
+  margin: 10px auto;
+  width: 1800px !important;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar {
+  height: 80px;
+  position: relative;
+}
+
+.main_div {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(240, 240, 240, 0.849);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav_btn:hover {
+  background-color: #ec7f24;
+  padding: 10px 20px;
+  transform: translateY(-5px);
+  transition: all 0.5s;
+}
+
+.nav_btn:hover > span {
+  color: rgb(240, 240, 240);
+}
+
+.nav_btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 20px;
+}

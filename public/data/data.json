@@ -1,0 +1,25 @@
+{
+  "logo": [
+    {
+      "logo": "https://cdn.pixabay.com/photo/2017/02/09/21/08/wings-2053515__340.png"
+    }
+  ],
+  "menu": [
+    {
+      "logo": "https://icon2.cleanpng.com/20180330/dee/kisspng-bistro-cafe-ermita-conrad-manila-restaurant-restaurant-logo-5abe74db250194.1806435115224311951516.jpg"
+    }
+  ],
+  "slider": [
+    {
+      "img": "https://www.winni.in/celebrate-relations/wp-content/uploads/2019/03/f7.jpg",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas tempora ex sint est, adipisci magni",
+      "description": "Main Menu"
+    },
+
+    {
+      "img": "https://cdn.hswstatic.com/gif/desserts-update.jpg",
+      "info": " fugiat ipsam similique at optio, esse, suscipit voluptates consequuntur accusantium. Beatae alias magnam odio!",
+      "description": "Desserts"
+    }
+  ]
+}
