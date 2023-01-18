@@ -57,7 +57,7 @@ export default function MainNav() {
               <NavDropdown.Item href="/menu">Main Menu</NavDropdown.Item>
               <NavDropdown.Item href="/action/3.2">Breakfast</NavDropdown.Item>
               <Link
-                to="Desserts_dessert__2wkbU"
+                to="desserts"
                 smooth={true}
                 offset={-130}
                 className={styles.link}
