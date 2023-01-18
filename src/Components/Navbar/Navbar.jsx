@@ -30,7 +30,7 @@ export default function MainNav() {
           </Navbar.Brand>
           <Nav bsPrefix="nav_buttons" className={styles.nav_buttons}>
             <Link
-              to="About_about__xPgdP"
+              to="About_about__1eeQa"
               spy={true}
               smooth={true}
               offset={-150}

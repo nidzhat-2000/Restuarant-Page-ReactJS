@@ -5,9 +5,6 @@
 }
 
 .dessert_box {
-  display: grid;
-  gap: 36px;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .one_desert {
