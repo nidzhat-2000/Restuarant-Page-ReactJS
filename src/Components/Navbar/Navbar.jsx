@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import logo from './logo.png';
 import styles from './Navbar.module.css';
 
 export default function MainNav() {
-  const handleClick = event => {
-    event.preventDefault();
-    const element = document.querySelector('.about');
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const homeClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const route = useLocation();
+  const scroll = route.pathname !== '/';
 
   return (
     <div className={styles.main_div}>
@@ -27,21 +29,24 @@ export default function MainNav() {
             <img className={styles.logo} src={logo} alt="logo" />
           </Navbar.Brand>
           <Nav bsPrefix="nav_buttons" className={styles.nav_buttons}>
+            <Link
+              to="About_about__xPgdP"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              className={styles.link}
+              duration={0}
+              // delay={1000}
+            >
+              <Nav.Link className={styles.nav_btn}>
+                <span>About</span>
+              </Nav.Link>
+            </Link>
             <Nav.Link
               className={styles.nav_btn}
-              // href="/about"
+              onClick={homeClick}
+              href={scroll ? '/' : null}
             >
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={0}
-              >
-                <span onClick={handleClick}> About </span>
-              </Link>
-            </Nav.Link>
-            <Nav.Link className={styles.nav_btn} href="/">
               <span> Home</span>
             </Nav.Link>
             <NavDropdown
@@ -51,16 +56,41 @@ export default function MainNav() {
             >
               <NavDropdown.Item href="/menu">Main Menu</NavDropdown.Item>
               <NavDropdown.Item href="/action/3.2">Breakfast</NavDropdown.Item>
-              <NavDropdown.Item href="/action/3.3">Deserts</NavDropdown.Item>
+              <Link
+                to="Desserts_dessert__2wkbU"
+                smooth={true}
+                offset={-130}
+                className={styles.link}
+                duration={0}
+              >
+                <NavDropdown.Item href="/action/3.3">Deserts</NavDropdown.Item>
+              </Link>
               <NavDropdown.Divider />
-              {/* <NavDropdown.Item href="/action/3.4">Drinks</NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link className={styles.nav_btn} href="/interier">
-              <span>Interier</span>
-            </Nav.Link>
-            <Nav.Link className={styles.nav_btn} href="/places">
-              <span>Restaurants</span>
-            </Nav.Link>
+            <Link
+              to="interier"
+              smooth={true}
+              offset={-150}
+              className={styles.link}
+            >
+              <Nav.Link className={styles.nav_btn} href="/interier">
+                <span>Interier</span>
+              </Nav.Link>
+            </Link>
+            <Link
+              to="restaurants"
+              smooth={true}
+              offset={-150}
+              className={styles.link}
+              // duration={100}
+              delay={0}
+              // spyThrottle={5000}
+              // isDynamic={true}
+            >
+              <Nav.Link className={styles.nav_btn} href="/places">
+                <span>Restaurants</span>
+              </Nav.Link>
+            </Link>
           </Nav>
         </Container>
       </Navbar>

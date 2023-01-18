@@ -1,0 +1,37 @@
+.dessert {
+  text-align: center;
+  margin: 100px auto;
+  width: 85%;
+}
+
+.dessert_box {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.one_desert {
+  display: grid;
+  background-color: #f6f6f6c9;
+  gap: 20px;
+  grid-template-rows: 1fr;
+  padding: 30px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.144);
+}
+
+.one_desert > img {
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+}
+
+.one_desert > span {
+  font-style: italic;
+}
+
+.one_desert:hover {
+  cursor: pointer;
+  box-shadow: 5px 15px 10px 5px rgba(0, 0, 0, 0.397);
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}

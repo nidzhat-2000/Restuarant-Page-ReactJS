@@ -32,7 +32,8 @@
 .main_div {
   padding: 10px;
   border-radius: 0 0 10px 10px;
-  background-color: rgba(240, 240, 240, 0.849);
+  /* background-color: rgba(240, 240, 240, 0.849); */
+  background-color: #f6f6f6c9;
   position: sticky;
   top: 0;
   left: 0;
@@ -47,7 +48,11 @@
   transition: all 0.5s;
 }
 
-.nav_btn:hover > span {
+.link {
+  text-decoration: none;
+}
+
+.link:hover > .nav_btn > span {
   color: rgb(240, 240, 240);
 }
 
@@ -55,4 +60,5 @@
   border-radius: 10px;
   padding: 10px 20px;
   margin-left: 20px;
+  text-decoration: none;
 }

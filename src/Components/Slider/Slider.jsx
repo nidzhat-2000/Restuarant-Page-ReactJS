@@ -1,34 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import useFetch from '../../utils/useFetch';
 
 export default function ControlledCarousel() {
+  const { data } = useFetch('../data/data.json');
+  const slider = data?.slider;
+
+  // Slider issues ⤵
   const [index, setIndex] = useState(0);
-  const [slider, setSlider] = useState(null);
-
-  useEffect(() => {
-    const cart = async () => {
-      const res = await fetch('../data/data.json');
-      const data = await res.json();
-      const { slider } = data;
-
-      console.log(slider);
-
-      if (slider) {
-        setSlider(slider);
-      }
-    };
-    cart();
-  }, []);
-
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = selectedIndex => {
     setIndex(selectedIndex);
   };
 
   return (
     <div
-      style={{
-        height: '20px',
-      }}
+      // style={{
+      //   height: '20px',
+      // }}
     >
       <Carousel
         nextIcon={
@@ -62,7 +50,7 @@ export default function ControlledCarousel() {
                 src={img}
                 alt="First slide"
                 style={{
-                  height: '450px',
+                  height: '425px',
                   borderRadius: '0 0 20px 20px',
                 }}
               />
@@ -70,9 +58,10 @@ export default function ControlledCarousel() {
                 <h3
                   style={{
                     color: 'black',
-                    backgroundColor: 'white',
+                    backgroundColor: 'rgba(240, 240, 240, 0.649)',
                     display: 'inline-block',
                     padding: '12px',
+                    borderRadius: '20px',
                   }}
                 >
                   {description}
@@ -80,11 +69,11 @@ export default function ControlledCarousel() {
                 <p
                   style={{
                     color: 'black',
-                    backgroundColor: 'white',
-                    // display: 'block',
+                    backgroundColor: 'rgba(240, 240, 240, 0.649)',
                     width: '80%',
                     margin: '0 auto',
                     padding: '12px',
+                    borderRadius: '20px',
                   }}
                 >
                   {info}

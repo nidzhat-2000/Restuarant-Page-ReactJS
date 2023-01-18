@@ -1,0 +1,47 @@
+.about {
+  text-align: center;
+  margin: 100px auto 0 auto;
+  width: 85%;
+}
+
+.info {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.linko {
+  margin-top: 140px;
+}
+
+.linko:link,
+.linko:active,
+.linko:visited {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  font-style: italic;
+  transform: translateY(-25px);
+}
+
+.linko:hover {
+  color: rgb(90, 89, 89);
+  transform: translateX(-5px);
+  transition: all 1s;
+}
+
+.founder {
+  margin: 50px auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.founder_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.founder_info > span {
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 20px;
+}
