@@ -3,10 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import logo from './logo.png';
 import styles from './Navbar.module.css';
+LazyLoadImage;
 
 export default function MainNav() {
   const homeClick = () => {
@@ -26,7 +28,12 @@ export default function MainNav() {
       >
         <Container as="div" className={styles.container}>
           <Navbar.Brand href="/">
-            <img className={styles.logo} src={logo} alt="logo" />
+            <LazyLoadImage
+              effect="blur"
+              className={styles.logo}
+              src={logo}
+              alt="logo"
+            />
           </Navbar.Brand>
           <Nav bsPrefix="nav_buttons" className={styles.nav_buttons}>
             <Link
