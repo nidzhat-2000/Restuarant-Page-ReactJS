@@ -16,25 +16,27 @@ export default function About() {
   }
 
   return (
-    <section className={styles.about}>
-      <h4
-        style={{
-          marginTop: rest ? '-150px' : '',
-        }}
-        className="header"
-      >
-        About Us
-      </h4>
-      {!rest && (
-        <div>
-          <p className={styles.info}>{about?.info.slice(0, 704) + '...'}</p>
-          <Link className={styles.linko} to="/about">
-            Explore more ...
-          </Link>
-        </div>
-      )}
+    <div className="about">
+      <section className={styles.about}>
+        <h4
+          style={{
+            marginTop: rest ? '-150px' : '',
+          }}
+          className="header"
+        >
+          About Us
+        </h4>
+        {!rest && (
+          <div>
+            <p className={styles.info}>{about?.info.slice(0, 704) + '...'}</p>
+            <Link className={styles.linko} to="/about">
+              Explore more ...
+            </Link>
+          </div>
+        )}
 
-      {rest && <RestAbout about={about} />}
-    </section>
+        {rest && <RestAbout about={about} />}
+      </section>
+    </div>
   );
 }
