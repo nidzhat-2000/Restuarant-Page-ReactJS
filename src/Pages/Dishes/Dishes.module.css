@@ -1,0 +1,62 @@
+.dishes {
+  text-align: center;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.dishes_container {
+  margin: auto;
+  display: grid;
+  row-gap: 40px;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.card {
+  width: 22rem;
+  height: 26rem;
+  margin: auto;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.233);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img {
+  filter: brightness(60%);
+  opacity: 0.9;
+  object-fit: cover;
+  height: 26rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  filter: brightness(100%);
+  transition: all 0.5s;
+}
+
+.img:hover + div {
+  display: none;
+  transition: all 0.5s;
+}
+
+.category_name {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.box {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box:hover {
+  display: none;
+  transition: all 0.5s;
+}

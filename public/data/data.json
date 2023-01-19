@@ -36,12 +36,35 @@
   "footer": {
     "carts": [
       {
-        "img": "https://ozsut.az/uploads/apps/owphoto/183x100/o0v47a0118gka5sbl0l8i2.png"
-      },
-      {
-        "img": "https://ozsut.az/uploads/apps/owphoto/169x100/44051ao0rgvkcla2rmc0xc.png"
+        "img": "https://cafecity.az/static/assets/img/visa_mastercard.svg"
       }
     ],
     "menus": ["About", "Menu", "Restaurants", "Contact", "Interier", "Home"]
-  }
+  },
+  "dishCategories": [
+    {
+      "category": "Main Menu",
+      "img": "https://cafecity.az/media/menu_images/69050270_101922254548406_547788985154404352_o.png.330x330_q85_box-0%2C0%2C1000%2C1000_crop_detail.jpg"
+    },
+    {
+      "category": "City Pub Menu",
+      "img": "https://cafecity.az/media/menu_images/citypub.png.330x330_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
+    },
+    {
+      "category": "Asia Kitchen",
+      "img": "https://cafecity.az/media/menu_images/Asiya-Metbexi-Oblojka.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+    },
+    {
+      "category": "Drinks",
+      "img": "https://cafecity.az/media/menu_images/Cocktails-Menu-Oblojka_copy.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.png"
+    },
+    {
+      "category": "Alcoholic Drinks",
+      "img": "https://cafecity.az/media/menu_images/city_park_MCN5cnU.jpg.330x330_q85_box-0%2C1111%2C4461%2C5567_crop_detail.jpg"
+    },
+    {
+      "category": "Kids Menu",
+      "img": "https://cafecity.az/media/menu_images/Kids_Menu_Oblojki_dla_Sayta.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+    }
+  ]
 }

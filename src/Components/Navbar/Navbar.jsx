@@ -8,7 +8,6 @@ import { useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import logo from './logo.png';
 import styles from './Navbar.module.css';
-LazyLoadImage;
 
 export default function MainNav() {
   const homeClick = () => {
@@ -49,6 +48,7 @@ export default function MainNav() {
                 <span>About</span>
               </Nav.Link>
             </Link>
+
             <Nav.Link
               className={styles.nav_btn}
               onClick={homeClick}
@@ -56,6 +56,7 @@ export default function MainNav() {
             >
               <span> Home</span>
             </Nav.Link>
+
             <NavDropdown
               className={styles.nav_btn}
               title="Menu"
