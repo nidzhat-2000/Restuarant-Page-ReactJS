@@ -16,11 +16,15 @@ code {
   display: inline-block;
   margin: 0 auto 60px auto;
   font-size: 30px;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-weight: 700;
-  background-color: #ec7e24de;
+  /* background-color: #ec7e24de; */
   padding: 20px 70px;
   box-shadow: 5px 5px 8px 6px rgba(0, 0, 0, 0.178);
   border-radius: 40px 5px 40px 5px;
   text-align: center;
+  background-color: #efdbb2;
+
+  font-family: 'FuturaPtBold', sans-serif;
+  color: rgb(139, 103, 97);
 }

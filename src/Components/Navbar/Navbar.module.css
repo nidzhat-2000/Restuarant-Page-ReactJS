@@ -32,13 +32,15 @@
 .main_div {
   padding: 10px;
   border-radius: 0 0 10px 10px;
-  /* background-color: rgba(240, 240, 240, 0.849); */
   background-color: #f6f6f6c9;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  background-color: #efdbb2cb;
+  font-family: 'FuturaPtBold', sans-serif;
+  color: rgb(139, 103, 97);
 }
 
 .nav_btn:hover {
