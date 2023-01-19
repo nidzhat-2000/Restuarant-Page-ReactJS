@@ -89,6 +89,7 @@ export default function Footer() {
             alignItems: 'center',
             height: '40px',
             color: '#866761',
+            fontWeight: '600',
           }}
         >
           <span>Designed by &copy; Nijat Niyazov in 2023</span>
