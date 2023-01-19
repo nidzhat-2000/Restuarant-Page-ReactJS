@@ -49,7 +49,7 @@
 }
 
 .menu:hover {
-  color: #ec7f24;
+  color: #9b7872;
   border-radius: 10px;
   transform: translateX(10px) scaleX(1.1);
   cursor: pointer;
