@@ -62,8 +62,17 @@ export default function MainNav() {
               title="Menu"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="/menu">Main Menu</NavDropdown.Item>
-              <NavDropdown.Item href="/action/3.2">Breakfast</NavDropdown.Item>
+              <Link
+                to="dishes"
+                smooth={true}
+                offset={-130}
+                className={styles.link}
+                duration={0}
+              >
+                <NavDropdown.Item>Main Menu</NavDropdown.Item>
+              </Link>
+              {/* <NavDropdown.Item href="/action/3.2">Breakfast</NavDropdown.Item> */}
+
               <Link
                 to="desserts"
                 smooth={true}
@@ -71,7 +80,7 @@ export default function MainNav() {
                 className={styles.link}
                 duration={0}
               >
-                <NavDropdown.Item href="/action/3.3">Deserts</NavDropdown.Item>
+                <NavDropdown.Item>Deserts</NavDropdown.Item>
               </Link>
               <NavDropdown.Divider />
             </NavDropdown>
