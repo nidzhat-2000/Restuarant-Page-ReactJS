@@ -91,9 +91,7 @@ export default function Footer() {
             color: '#866761',
           }}
         >
-          <span>
-            Designed by <author> &copy; Nijat Niyazov </author> in 2023
-          </span>
+          <span>Designed by &copy; Nijat Niyazov in 2023</span>
           <a
             style={{
               color: '#866761',
