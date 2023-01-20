@@ -1,27 +1,12 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import useFetch from '../../utils/useFetch';
+import React from 'react';
 import styles from './Branches.module.css';
 
-export default function Branches() {
-  const { data } = useFetch('./data/data.json');
-  const restaurants = data?.restaurants;
-  const route = useLocation();
-  const rest = route.pathname === '/restaurants';
-
-  if (rest) {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
+export default function Branches({ data }) {
   return (
     <section className={styles.branches}>
       <h5 className="header">Our Branches</h5>
       <article className={styles.branches_cont}>
-        {restaurants?.map((res, i) => {
+        {data?.map((res, i) => {
           const { name, address, contact } = res;
           return (
             <div className={styles.branch} key={i}>

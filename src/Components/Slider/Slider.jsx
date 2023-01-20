@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import useFetch from '../../utils/useFetch';
 
-export default function ControlledCarousel() {
-  const { data } = useFetch('../data/data.json');
-  const slider = data?.slider;
-
+export default function ControlledCarousel({ data }) {
   // Slider issues ⤵
   const [index, setIndex] = useState(0);
   const handleSelect = selectedIndex => {
@@ -37,7 +34,7 @@ export default function ControlledCarousel() {
         activeIndex={index}
         onSelect={handleSelect}
       >
-        {slider?.map((eachSlider, i) => {
+        {data?.map((eachSlider, i) => {
           const { description, info, img } = eachSlider;
           return (
             <Carousel.Item key={i}>

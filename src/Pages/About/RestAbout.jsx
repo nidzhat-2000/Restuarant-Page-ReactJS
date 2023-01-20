@@ -2,7 +2,8 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './About.module.css';
 
-export default function RestAbout({ about }) {
+export default function RestAbout({ data }) {
+  const about = data?.about;
   return (
     <div>
       <p className={styles.info}>{about?.info.slice(704, -1)}</p>

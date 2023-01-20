@@ -2,20 +2,20 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function FoodCard({ foods }) {
-  const exString = '10';
-  const output = exString.padEnd(4, '$');
-
   return (
     <>
-      {foods?.map(product => {
+      {foods?.map((product, i) => {
         const { name, img, instructions, price } = product;
+        const length = price.length;
+        const dot = price.includes('.');
         return (
-          <article style={{ display: 'flex', flexDirection: 'column' }}>
+          <article key={i} style={{ display: 'flex', flexDirection: 'column' }}>
             <LazyLoadImage src={img} style={{ width: '100%' }} />
             <h4>{name}</h4>
             <h6>{instructions}</h6>
-            <span>
-              {`${price.includes('.') ? price : price + '.'}`.padEnd(5, '0')}
+            <span style={{ display: 'flex' }}>
+              {price.padEnd(`${length === 3 ? 4 : 5}`, `${dot ? '00' : '.00'}`)}
+              <p style={{ marginLeft: '5px' }}>AZN</p>
             </span>
           </article>
         );

@@ -45,6 +45,12 @@
   transition: all 1s;
 }
 
+.active {
+  border-radius: 27px;
+  background-color: rgb(239 219 178);
+  transition: all 1s;
+}
+
 .dishes {
   display: grid;
   column-gap: 40px;

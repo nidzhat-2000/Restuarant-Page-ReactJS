@@ -4,10 +4,9 @@ import useFetch from '../../../utils/useFetch';
 import styles from './Desserts.module.css';
 import Box from '@mui/material/Box';
 
-export default function Desserts() {
-  const { data } = useFetch('../data/data.json');
-  const header = data?.dessertsPage.header;
-  const products = data?.dessertsPage.products;
+export default function Desserts({ data }) {
+  const header = data?.header;
+  const products = data?.products;
 
   return (
     <div className="desserts">

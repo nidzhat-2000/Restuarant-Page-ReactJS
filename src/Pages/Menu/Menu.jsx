@@ -1,24 +1,29 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import useFetch from '../../utils/useFetch';
 import FoodCard from './FoodCard';
 import styles from './Menu.module.css';
 
-export default function Menu() {
-  const { data } = useFetch('./data/data.json');
-  const menu = data?.menu;
-  const initial = menu?.[0].products;
+export default function Menu({ data, img }) {
   const [foods, setFoods] = useState(null);
+  const ref = useRef();
 
-  const setter = e => {
-    const needed = menu.find(each => each.mainCategory === e.target.innerText);
+  const subMenusSetter = e => {
+    const needed = data.find(each => each.mainCategory === e.target.innerText);
     setFoods(needed.products);
+  };
+
+  const activeMenuSetter = e => {
+    ref.current
+      .querySelectorAll('h4')
+      .forEach(h4 => h4.classList.remove(`${styles.active}`));
+    e.target.classList.add(`${styles.active}`);
   };
 
   return (
     <>
       <div style={{ position: 'relative' }}>
-        <LazyLoadImage className={styles.slider} src={data?.adTapmadim} />
+        <LazyLoadImage className={styles.slider} src={img} />
         <article className={styles.slider_info}>
           <h1>Welcome to our Menu</h1>
           <h4>We are glad serving our customers </h4>
@@ -27,12 +32,16 @@ export default function Menu() {
       </div>
 
       <section className={styles.menu}>
-        <article className={styles.categories}>
-          {menu?.map((eachMenu, i) => {
+        <article
+          className={styles.categories}
+          ref={ref}
+          onClick={activeMenuSetter}
+        >
+          {data?.map((eachMenu, i) => {
             const { mainCategory } = eachMenu;
             return (
               <div className={styles.category_name} key={i}>
-                <h4 onClick={setter}>{mainCategory}</h4>
+                <h4 onClick={subMenusSetter}>{mainCategory}</h4>
               </div>
             );
           })}

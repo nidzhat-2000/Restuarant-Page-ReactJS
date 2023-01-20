@@ -1,23 +1,13 @@
-import React, { lazy, useEffect } from 'react';
+import React, { lazy } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import useFetch from '../../utils/useFetch';
 import styles from './About.module.css';
+
+// LazyLoad ⤵
 const RestAbout = lazy(() => import('./RestAbout'));
 
-export default function About() {
-  const { data } = useFetch('./data/data.json');
-  const about = data?.about;
-
+export default function About({ data }) {
   const route = useLocation();
   const rest = route.pathname === '/about';
-
-  if (rest) {
-    window.scrollTo({ top: 40, behavior: 'smooth' });
-  }
-
-  useEffect(() => {
-    window.scrollTo({ top: 40, behavior: 'smooth' });
-  });
 
   return (
     <div className="about">
@@ -32,14 +22,14 @@ export default function About() {
         </h4>
         {!rest && (
           <div>
-            <p className={styles.info}>{about?.info.slice(0, 704) + '...'}</p>
+            <p className={styles.info}>{data?.info.slice(0, 704) + '...'}</p>
             <Link className={styles.link} to="/about">
               <span className={styles.linko}>Explore more ...</span>
             </Link>
           </div>
         )}
 
-        {rest && <RestAbout about={about} />}
+        {rest && <RestAbout data={data} />}
       </section>
     </div>
   );
