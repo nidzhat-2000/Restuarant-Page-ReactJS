@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import styles from './Footer.module.css';
 import useFetch from '../../utils/useFetch';
 import { Link } from 'react-router-dom';
+import Creater from './Creater';
 
 export default function Footer() {
   const { data } = useFetch('./data/data.json');
@@ -29,7 +30,7 @@ export default function Footer() {
     <>
       <section className={styles.footer}>
         <div className={styles.container}>
-          <div className={styles.follow_container}>
+          <article className={styles.follow_container}>
             <h5>Follow us at:</h5>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               {icons.map((icon, i) => {
@@ -45,10 +46,10 @@ export default function Footer() {
                 );
               })}
             </div>
-          </div>
+          </article>
 
-          <div className={styles.middle}>
-            <article className={styles.menu_cat}>
+          <article className={styles.middle}>
+            <div className={styles.menu_cat}>
               {menus?.map((menu, i) => {
                 return (
                   <Link
@@ -64,10 +65,10 @@ export default function Footer() {
               <Link onClick={scroll} className={styles.menu}>
                 Home
               </Link>
-            </article>
-          </div>
+            </div>
+          </article>
 
-          <div className={styles.right}>
+          <article className={styles.right}>
             <h5>Carts</h5>
             {carts?.map((cart, i) => {
               const { img } = cart;
@@ -80,43 +81,10 @@ export default function Footer() {
                 />
               );
             })}
-          </div>
+          </article>
         </div>
       </section>
-      <div
-        style={{
-          width: '100%',
-          backgroundColor: 'orangered',
-          backgroundColor: 'rgb(239, 219, 178)',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            width: '60%',
-            margin: 'auto',
-            fontSize: '20px',
-            alignItems: 'center',
-            height: '40px',
-            color: '#866761',
-            fontWeight: '600',
-          }}
-        >
-          <span>Designed by &copy; Nijat Niyazov in 2023</span>
-          <a
-            style={{
-              color: '#866761',
-              textDecoration: 'none',
-              fontStyle: 'italic',
-            }}
-            href="https://github.com/nijat-niyazov"
-            target="_blank"
-          >
-            github.com/nijat-niyazov
-          </a>
-        </div>
-      </div>
+      <Creater />
     </>
   );
 }

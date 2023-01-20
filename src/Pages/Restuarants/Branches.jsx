@@ -7,7 +7,6 @@ export default function Branches() {
   const { data } = useFetch('./data/data.json');
   const restaurants = data?.restaurants;
   const route = useLocation();
-
   const rest = route.pathname === '/restaurants';
 
   if (rest) {

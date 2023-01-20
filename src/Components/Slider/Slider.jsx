@@ -13,11 +13,7 @@ export default function ControlledCarousel() {
   };
 
   return (
-    <div
-    // style={{
-    //   height: '20px',
-    // }}
-    >
+    <div>
       <Carousel
         nextIcon={
           <span
