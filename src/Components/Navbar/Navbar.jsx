@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { useLocation } from 'react-router-dom';
+import { Link as Linkito, useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import logo from './logo.png';
 import styles from './Navbar.module.css';
@@ -94,20 +95,11 @@ export default function MainNav() {
                 <span>Interier</span>
               </Nav.Link>
             </Link>
-            <Link
-              to="restaurants"
-              smooth={true}
-              offset={-150}
-              className={styles.link}
-              // duration={100}
-              delay={0}
-              // spyThrottle={5000}
-              // isDynamic={true}
-            >
-              <Nav.Link className={styles.nav_btn} href="/places">
-                <span>Restaurants</span>
+            <Linkito to="/branches">
+              <Nav.Link className={styles.nav_btn} href="/restaurants">
+                <span>Branches</span>
               </Nav.Link>
-            </Link>
+            </Linkito>
           </Nav>
         </Container>
       </Navbar>

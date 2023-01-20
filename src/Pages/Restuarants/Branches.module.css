@@ -1,0 +1,23 @@
+.branches {
+  text-align: center;
+  margin: 50px auto;
+  width: 85%;
+  color: #5a5a5a;
+}
+
+.branches_cont {
+  margin-left: 120px;
+  padding-left: auto;
+  text-align: start;
+  display: grid;
+  row-gap: 80px;
+  column-gap: 40px;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+}

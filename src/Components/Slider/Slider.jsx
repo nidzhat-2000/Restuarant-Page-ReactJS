@@ -14,9 +14,9 @@ export default function ControlledCarousel() {
 
   return (
     <div
-      // style={{
-      //   height: '20px',
-      // }}
+    // style={{
+    //   height: '20px',
+    // }}
     >
       <Carousel
         nextIcon={
@@ -52,12 +52,13 @@ export default function ControlledCarousel() {
                 style={{
                   height: '425px',
                   borderRadius: '0 0 20px 20px',
+                  filter: 'brightness(80%)',
                 }}
               />
               <Carousel.Caption style={{ marginBottom: '20px' }}>
                 <h3
                   style={{
-                    color: 'black',
+                    color: '#5a5a5a',
                     backgroundColor: 'rgba(240, 240, 240, 0.649)',
                     display: 'inline-block',
                     padding: '12px',
@@ -86,5 +87,3 @@ export default function ControlledCarousel() {
     </div>
   );
 }
-
-// render(<ControlledCarousel />);

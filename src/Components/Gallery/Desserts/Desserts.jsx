@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import useFetch from '../../utils/useFetch';
+import useFetch from '../../../utils/useFetch';
 import styles from './Desserts.module.css';
 import Box from '@mui/material/Box';
 

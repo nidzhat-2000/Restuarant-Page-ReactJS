@@ -2,6 +2,8 @@
   text-align: center;
   margin: 100px auto;
   width: 85%;
+  color: #5a5a5a;
+
 }
 
 .one_desert {
@@ -25,7 +27,7 @@
 
 .one_desert:hover {
   cursor: pointer;
-  box-shadow: 5px 15px 10px 5px rgba(0, 0, 0, 0.397);
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.397);
   transform: translateY(-10px);
   transition: all 0.5s;
 }

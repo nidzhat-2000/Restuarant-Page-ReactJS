@@ -1,0 +1,16 @@
+.slider {
+  position: relative;
+  width: 100%;
+  filter: brightness(70%);
+  opacity: 0.8;
+}
+
+.slider_info {
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

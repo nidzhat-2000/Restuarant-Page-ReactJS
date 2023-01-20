@@ -39,20 +39,24 @@
         "img": "https://cafecity.az/static/assets/img/visa_mastercard.svg"
       }
     ],
-    "menus": ["About", "Menu", "Restaurants", "Contact", "Interier", "Home"]
+    "menus": ["About", "Menu", "Branches", "Contact", "Interier"]
   },
-  "dishCategories": [
+  "gallery": [
     {
       "category": "Main Menu",
       "img": "https://cafecity.az/media/menu_images/69050270_101922254548406_547788985154404352_o.png.330x330_q85_box-0%2C0%2C1000%2C1000_crop_detail.jpg"
     },
     {
-      "category": "City Pub Menu",
-      "img": "https://cafecity.az/media/menu_images/citypub.png.330x330_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
+      "category": "Breakfast",
+      "img": "https://cafecity.az/media/menu_images/download_1.png.330x330_q85_box-0%2C0%2C330%2C330_crop_detail.jpg"
     },
     {
       "category": "Asia Kitchen",
       "img": "https://cafecity.az/media/menu_images/Asiya-Metbexi-Oblojka.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+    },
+    {
+      "category": "City Pub Menu",
+      "img": "https://cafecity.az/media/menu_images/citypub.png.330x330_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
     },
     {
       "category": "Drinks",
@@ -61,10 +65,114 @@
     {
       "category": "Alcoholic Drinks",
       "img": "https://cafecity.az/media/menu_images/city_park_MCN5cnU.jpg.330x330_q85_box-0%2C1111%2C4461%2C5567_crop_detail.jpg"
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Özsüt Fountains Square",
+      "address": "Tarlan Aliyarbeyov str. 14",
+      "contact": "Contact: +994 (70) 314 00 11"
     },
     {
-      "category": "Kids Menu",
-      "img": "https://cafecity.az/media/menu_images/Kids_Menu_Oblojki_dla_Sayta.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      "name": "Department of Sciences",
+      "address": "Matbuat avenue, M. Seyidov street (in the park next to the Theological Mosque)",
+      "contact": "Contact: +994 (51) 351-00-11"
+    },
+    {
+      "name": "Ganjlik Mall branch",
+      "address": "Fatali Khan Khoyski str. 14",
+      "contact": "Contact: +994 (77) 351 00 11"
+    },
+    {
+      "name": "Winter park department",
+      "address": "Fuzuli St. 47",
+      "contact": "Contact: +994 (77) 341-00-11"
+    },
+    {
+      "name": "Atatürk Park Department",
+      "address": "Speech of Ganjlik m/st",
+      "contact": "Contact: +994 (70) 311-00-11"
     }
-  ]
+  ],
+  "adTapmadim": "https://cafecity.az/media/menu_images_header/CC-Site-Long-New-Menu-2021_y6nY6YH.png.1440x266_q85_box-0%2C0%2C1434%2C266_crop_detail.jpg",
+  "menu": {
+    "SNACKS": [
+      {
+        "name": "SPRING ROLLS WITH CHICKEN AND VEGETABLES",
+        "instructions": "Chicken fillet, bell pepper, carrot, onion, cabbage, garlic, cumin, soy sauce",
+        "price": "6.9",
+        "img": "https://cafecity.az/media/product_image/SPRING-ROLLS-WITH-CHICKEN-AND-VEGETABLES_5KpVJuB.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "PROFITROL WITH CHICKEN, MUSHROOMS AND FRIED POTATOES",
+        "instructions": "Profitrol, Dutch cheese, onions, mushrooms, chicken fillet, sour cream, cream, potatoes with garlic",
+        "price": "10.3",
+        "img": "https://cafecity.az/media/product_image/PROFITEROLES-WITH-CHICKEN-MUSHROOMS-AND-FRIED-POTATO_YbcVnoo.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "VARIETIES OF CHEESE",
+        "instructions": "Gouda cheese, marinated white cheese, mozzarella cheese, parmesan cheese",
+        "price": "11.4",
+        "img": "https://cafecity.az/media/product_image/CHEESE-PLATE_Z9xDTXP.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "BEER SET",
+        "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
+        "price": "19",
+        "img": "https://cafecity.az/media/product_image/BEER-PLATE_U3xRHcg.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      }
+    ],
+    "SALADS": [
+      {
+        "name": "CHICKEN SALAD WITH PARMESAN",
+        "instructions": "Chicken fillet, parmesan cheese, cream cheese, cherry tomatoes, lettuce, garlic croutons, pesto sauce",
+        "price": "10",
+        "img": "https://cafecity.az/media/product_image/CHICKEN-SALAD-WITH-PARMESAN-CHEESE_sEWh9UV.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "SALAD WITH BROKEN CHICKEN",
+        "instructions": "Smoked chicken, fried onions, corn, red canned beans, pickles, cucumbers, tomatoes, garlic croutons, iceberg lettuce, mayonnaise",
+        "price": "10.3",
+        "img": "https://cafecity.az/media/product_image/SMOKED-CHICKEN-SALAD_YeAV8bM.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "GREEK SALAD",
+        "instructions": "Chicken fillet, tomato, bell pepper, white beans, sweet corn, lettuce, olive oil, sweet chili sauce",
+        "price": "9",
+        "img": "https://cafecity.az/media/product_image/GREEK-SALAD_Q9brJkt.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "CHICKEN SALAD",
+        "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
+        "price": "19",
+        "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "SALAD WITH FRIED GOLDFISH",
+        "instructions": "Salmon, garlic croutons, egg, radish, tomato, parmesan cheese, arugula, lettuce, Caesar dressing",
+        "price": "15.8",
+        "img": "https://cafecity.az/media/product_image/FRIED-SALMON-WITH-VEGETABLES-IN-SUN-DRIED-TOMATOES-SAUCE_pI0z0zk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      },
+      {
+        "name": "CAESAR SALAD",
+        "instructions": "Chicken fillet, garlic fried breadcrumbs, parmesan cheese, iceberg lettuce, tomato, Caesar dressing",
+        "price": "12.8",
+        "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+      }
+    ],
+    "SOUPS": [],
+    "MAIN DISHES": [],
+    "PASTAS": [],
+    "FAST FOOD": [],
+    "DESSERTS": [],
+    "DRINKS": [],
+    "JUICES": [],
+    "ALCOHOLIC BEVERAGES": [],
+    "COFFEE WITH ALCOHOL": [],
+    "VODKA": [],
+    "TEQUILA": [],
+    "WHISKEY": [],
+    "COGNAC": [],
+    "BEER": []
+  }
 }

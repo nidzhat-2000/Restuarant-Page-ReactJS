@@ -11,6 +11,13 @@ export default function Footer() {
   const carts = data?.footer.carts;
   const menus = data?.footer.menus;
 
+  const scroll = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth',
+    });
+  };
+
   const icons = [
     <FacebookIcon style={{ fontSize: 50, color: '#139df8' }} />,
     <YouTubeIcon style={{ fontSize: 50, color: '#f00' }} />,
@@ -48,11 +55,15 @@ export default function Footer() {
                     to={`/${menu.toLowerCase()}`}
                     className={styles.menu}
                     key={i}
+                    value={menu}
                   >
                     {menu}
                   </Link>
                 );
               })}
+              <Link onClick={scroll} className={styles.menu}>
+                Home
+              </Link>
             </article>
           </div>
 

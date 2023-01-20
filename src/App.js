@@ -1,11 +1,11 @@
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import MainNav from './Components/Navbar/Navbar';
 import Home from './Home';
 import About from './Pages/About/About';
-import Footer from './Pages/Footer/Footer';
-
-// const About = lazy(() => import('./Pages/About/About'));
+import Footer from './Components/Footer/Footer';
+import Branches from './Pages/Restuarants/Branches';
+import Menu from './Pages/Menu/Menu';
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<About />} path="/about" />
+          <Route element={<Branches />} path="/branches" />
+          <Route element={<Menu />} path="/menu" />
         </Routes>
       </Suspense>
       <Footer />

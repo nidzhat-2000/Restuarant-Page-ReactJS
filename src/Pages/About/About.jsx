@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { lazy, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useFetch from '../../utils/useFetch';
 import styles from './About.module.css';
@@ -15,6 +15,10 @@ export default function About() {
     window.scrollTo({ top: 40, behavior: 'smooth' });
   }
 
+  useEffect(() => {
+    window.scrollTo({ top: 40, behavior: 'smooth' });
+  });
+
   return (
     <div className="about">
       <section className={styles.about}>
@@ -29,8 +33,8 @@ export default function About() {
         {!rest && (
           <div>
             <p className={styles.info}>{about?.info.slice(0, 704) + '...'}</p>
-            <Link className={styles.linko} to="/about">
-              Explore more ...
+            <Link className={styles.link} to="/about">
+              <span className={styles.linko}>Explore more ...</span>
             </Link>
           </div>
         )}

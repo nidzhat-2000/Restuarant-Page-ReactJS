@@ -24,9 +24,9 @@
   filter: brightness(60%);
   opacity: 0.9;
   object-fit: cover;
+  max-width: 100%;
   height: 26rem;
   position: relative;
-  border-radius: 5px;
 }
 
 .img:hover {

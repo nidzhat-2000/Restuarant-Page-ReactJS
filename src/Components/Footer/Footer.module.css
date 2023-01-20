@@ -1,8 +1,7 @@
 .footer {
   display: flex;
-  color: rgb(255, 255, 255);
+  color: rgb(218, 216, 216);
   align-items: center;
-  /* background-color: #f6f6f6; */
   background: url('https://cafecity.az/static/assets/img/footer.jpg') no-repeat;
   background-size: cover !important;
   height: 330px;
@@ -45,7 +44,7 @@
   padding: 3px;
   font-size: 20px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(218, 216, 216);
 }
 
 .menu:hover {
