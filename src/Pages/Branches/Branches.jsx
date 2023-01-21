@@ -16,7 +16,7 @@ export default function Branches({ data }) {
             </div>
           );
         })}
-        <h3></h3>
+        {/* <h3></h3> */}
       </article>
     </section>
   );

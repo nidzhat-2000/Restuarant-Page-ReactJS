@@ -31,7 +31,10 @@
   },
   "about": {
     "info": "Our restaurant has been serving delicious dishes and desserts since 1990. Since its opening, our restaurant has been known for its mouth-watering food, warm atmosphere and friendly staff. In the beginning, our menu featured a variety of traditional dishes, but over the years, as tastes and trends have changed, we have adapted our menu to include more contemporary options. Despite these changes, we have always remained true to our roots, and our famous dishes from the 90s are still a staple on our menu. Our restaurant quickly gained a reputation for serving some of the best food in the area, and it wasn't long before we were attracting food critics and culinary enthusiasts from all over the city. But it wasn't just our savory dishes that drew people in; our desserts were also a huge hit. We have always had a passion for pastry and have spent years perfecting our recipes for cakes, pies, and other sweet treats. It's this dedication that has earned us the reputation of having the best desserts in town. As the years have gone by, we have seen many changes in the restaurant industry, but one thing has remained constant: our commitment to quality. Today, our restaurant is still a favorite among locals and visitors alike, and we look forward to many more years of serving delicious food and memories to our customers. We are proud to have been a part of the community for over three decades and look forward to serving for many more to come.",
-    "founder": "https://www.eu-startups.com/wp-content/uploads/2022/10/Screen-Shot-2022-10-07-at-10.20.42.png"
+    "founder": {
+      "photo": "https://www.eu-startups.com/wp-content/uploads/2022/10/Screen-Shot-2022-10-07-at-10.20.42.png",
+      "name": "Chris Bumstead"
+    }
   },
   "footer": {
     "carts": [
@@ -168,6 +171,42 @@
           "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
         }
       ]
+    },
+    {
+      "mainCategory": "PASTAS",
+      "products": []
+    },
+    {
+      "mainCategory": "FAST FOOD",
+      "products": []
+    },
+    {
+      "mainCategory": "SOUPS",
+      "products": []
+    },
+    {
+      "mainCategory": "DESSERTS",
+      "products": []
+    },
+    {
+      "mainCategory": "JUICES",
+      "products": []
+    },
+    {
+      "mainCategory": "BEER",
+      "products": []
+    },
+    {
+      "mainCategory": "VODKA",
+      "products": []
+    },
+    {
+      "mainCategory": "TEQUILA",
+      "products": []
+    },
+    {
+      "mainCategory": "WHISKEY",
+      "products": []
     }
   ]
 }

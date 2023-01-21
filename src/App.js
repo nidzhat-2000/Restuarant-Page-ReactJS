@@ -12,13 +12,11 @@ const Branches = lazy(() => import('./Pages/Branches/Branches'));
 
 function App() {
   const { data } = useFetch('../data/data.json');
-  // console.log(data);
-  const menu = data?.menu;
   const adtapmadim = data?.adTapmadim;
   const branches = data?.restaurants;
   const about = data?.about;
-
-  const route = useLocation();
+  const menu = data?.menu;
+  const first = data?.menu[0].products;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -32,7 +30,10 @@ function App() {
           <Route element={<Home data={data} />} path="/" />
           <Route element={<About data={about} />} path="/about" />
           <Route element={<Branches data={branches} />} path="/branches" />
-          <Route element={<Menu data={menu} img={adtapmadim} />} path="/menu" />
+          <Route
+            element={<Menu data={menu} img={adtapmadim} first={first} />}
+            path="/menu"
+          />
         </Routes>
       </Suspense>
       <Footer />

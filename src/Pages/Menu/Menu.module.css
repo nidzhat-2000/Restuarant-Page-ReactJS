@@ -1,5 +1,4 @@
 .slider {
-  position: relative;
   width: 100%;
   filter: brightness(70%);
   opacity: 0.8;
@@ -62,7 +61,7 @@
 
 .dish_info_cont {
   padding: 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 .instructions {
@@ -73,14 +72,14 @@
 
 .dish_info {
   width: 100%;
-  height: 120px;
-  overflow: hidden;
+  /* height: 120px; */
+  /* overflow: hidden; */
   background-color: #fff;
   transition: all 0.2s;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   padding: 20px;
-  transition: height 0.3s ease, transform 0.3s ease;
+  /* transition: height 0.3s ease, transform 0.3s ease; */
 }
 
 .dish_info:hover {
@@ -90,11 +89,6 @@
 }
 
 .price {
-  /* margin-top: 20px; */
-  visibility: visible;
-  bottom: 0;
-  right: 0;
-  position: absolute;
   font-size: 30px;
   display: flex;
   color: rgb(52, 52, 52);

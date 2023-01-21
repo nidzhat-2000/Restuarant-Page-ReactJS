@@ -3,6 +3,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './Menu.module.css';
 
 export default function FoodCard({ foods }) {
+  // console.log(foods);
+
   return (
     <>
       {foods?.map((product, i) => {
