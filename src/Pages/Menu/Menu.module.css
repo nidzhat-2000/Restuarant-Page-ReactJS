@@ -15,8 +15,9 @@
   transform: translate(-50%, -50%);
 }
 
-.menu {
-  width: 85%;
+.menu,
+.submenus {
+  width: 1120px;
   margin: auto;
 }
 
@@ -56,6 +57,47 @@
   column-gap: 40px;
   row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 85%;
   margin: auto;
+}
+
+.dish_info_cont {
+  padding: 20px;
+  position: relative;
+}
+
+.instructions {
+  font-size: 20px;
+  color: rgb(52, 52, 52);
+  line-height: 1.2;
+}
+
+.dish_info {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.2s;
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+
+.dish_info:hover {
+  height: 290px;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.price {
+  /* margin-top: 20px; */
+  visibility: visible;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size: 30px;
+  display: flex;
+  color: rgb(52, 52, 52);
+  font-weight: 700;
+  padding: 20px;
 }

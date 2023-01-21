@@ -12,10 +12,11 @@ const Branches = lazy(() => import('./Pages/Branches/Branches'));
 
 function App() {
   const { data } = useFetch('../data/data.json');
-  console.log(data);
+  // console.log(data);
   const menu = data?.menu;
   const adtapmadim = data?.adTapmadim;
   const branches = data?.restaurants;
+  const about = data?.about;
 
   const route = useLocation();
 
@@ -29,7 +30,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route element={<Home data={data} />} path="/" />
-          <Route element={<About data={data} />} path="/about" />
+          <Route element={<About data={about} />} path="/about" />
           <Route element={<Branches data={branches} />} path="/branches" />
           <Route element={<Menu data={menu} img={adtapmadim} />} path="/menu" />
         </Routes>

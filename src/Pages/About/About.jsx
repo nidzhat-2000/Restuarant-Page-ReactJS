@@ -5,7 +5,7 @@ import styles from './About.module.css';
 // LazyLoad ⤵
 const RestAbout = lazy(() => import('./RestAbout'));
 
-export default function About({ data }) {
+export default function About({ data, about }) {
   const route = useLocation();
   const rest = route.pathname === '/about';
 

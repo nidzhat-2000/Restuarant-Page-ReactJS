@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import useFetch from '../../utils/useFetch';
 import FoodCard from './FoodCard';
 import styles from './Menu.module.css';
 
@@ -21,8 +20,8 @@ export default function Menu({ data, img }) {
   };
 
   return (
-    <>
-      <div style={{ position: 'relative' }}>
+    <div>
+      <div>
         <LazyLoadImage className={styles.slider} src={img} />
         <article className={styles.slider_info}>
           <h1>Welcome to our Menu</h1>
@@ -48,11 +47,11 @@ export default function Menu({ data, img }) {
         </article>
       </section>
 
-      <section>
+      <section className={styles.submenus}>
         <article className={styles.dishes}>
           <FoodCard foods={foods} />
         </article>
       </section>
-    </>
+    </div>
   );
 }
