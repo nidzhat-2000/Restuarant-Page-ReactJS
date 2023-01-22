@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import useFetch from '../../utils/useFetch';
 
 export default function ControlledCarousel({ data }) {
   // Slider issues ⤵

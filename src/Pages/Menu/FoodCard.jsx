@@ -19,7 +19,10 @@ export default function FoodCard({ foods }) {
               flexDirection: 'column',
             }}
           >
-            <LazyLoadImage src={img} style={{ width: '100%' }} />
+            <LazyLoadImage
+              src={img}
+              style={{ width: '350px', height: '350px' }}
+            />
             <div className={styles.dish_info_cont}>
               <div className={styles.dish_info}>
                 <h5>{name}</h5>

@@ -2,11 +2,9 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import useFetch from '../../../utils/useFetch';
 import styles from './Gallery.module.css';
 
 export default function Gallery({ data }) {
-  
   return (
     <div className="dishes">
       <section className={styles.dishes}>
@@ -16,7 +14,7 @@ export default function Gallery({ data }) {
             const { img, category } = dish;
             return (
               <Card key={i} className={styles.card}>
-                <Link to="menu">
+                <Link to="/menu/breakfast">
                   <LazyLoadImage
                     className={styles.img}
                     variant="top"

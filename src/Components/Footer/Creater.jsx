@@ -5,7 +5,6 @@ export default function Creater() {
     <div
       style={{
         width: '100%',
-        backgroundColor: 'orangered',
         backgroundColor: 'rgb(239, 219, 178)',
       }}
     >

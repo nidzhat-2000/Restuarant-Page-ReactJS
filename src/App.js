@@ -1,9 +1,10 @@
-import { lazy, Suspense, useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import MainNav from './Components/Navbar/Navbar';
 import Home from './Home';
 import Footer from './Components/Footer/Footer';
 import useFetch from './utils/useFetch';
+import OurTeam from './Pages/OurTeam/OurTeam';
 
 // LazyLoaded components ⤵
 const Menu = lazy(() => import('./Pages/Menu/Menu'));
@@ -12,15 +13,10 @@ const Branches = lazy(() => import('./Pages/Branches/Branches'));
 
 function App() {
   const { data } = useFetch('../data/data.json');
-  const adtapmadim = data?.adTapmadim;
   const branches = data?.restaurants;
   const about = data?.about;
+  const menuCover = data?.menuCover;
   const menu = data?.menu;
-  const first = data?.menu[0].products;
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
 
   return (
     <div className="App">
@@ -31,9 +27,10 @@ function App() {
           <Route element={<About data={about} />} path="/about" />
           <Route element={<Branches data={branches} />} path="/branches" />
           <Route
-            element={<Menu data={menu} img={adtapmadim} first={first} />}
-            path="/menu"
+            element={<Menu data={menu} menuCover={menuCover} />}
+            path="/menu/:submenu"
           />
+          <Route element={<OurTeam />} path="/our_team" />
         </Routes>
       </Suspense>
       <Footer />

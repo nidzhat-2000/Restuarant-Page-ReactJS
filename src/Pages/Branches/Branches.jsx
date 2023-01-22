@@ -1,7 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './Branches.module.css';
 
 export default function Branches({ data }) {
+  const route = useLocation();
+  const rest = route.pathname === '/branches';
+
+  if (rest) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <section className={styles.branches}>
       <h5 className="header">Our Branches</h5>

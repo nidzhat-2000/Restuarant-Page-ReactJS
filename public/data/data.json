@@ -37,12 +37,12 @@
     }
   },
   "footer": {
+    "menus": ["About", "Menu", "Branches", "Our Team", "Interier"],
     "carts": [
       {
         "img": "https://cafecity.az/static/assets/img/visa_mastercard.svg"
       }
-    ],
-    "menus": ["About", "Menu", "Branches", "Contact", "Interier"]
+    ]
   },
   "gallery": [
     {
@@ -98,10 +98,11 @@
       "contact": "Contact: +994 (70) 311-00-11"
     }
   ],
-  "adTapmadim": "https://cafecity.az/media/menu_images_header/CC-Site-Long-New-Menu-2021_y6nY6YH.png.1440x266_q85_box-0%2C0%2C1434%2C266_crop_detail.jpg",
+  "menuCover": "https://cafecity.az/media/menu_images_header/CC-Site-Long-New-Menu-2021_y6nY6YH.png.1440x266_q85_box-0%2C0%2C1434%2C266_crop_detail.jpg",
   "menu": [
     {
       "mainCategory": "SNACKS",
+
       "products": [
         {
           "name": "SPRING ROLLS WITH CHICKEN AND VEGETABLES",
@@ -132,6 +133,7 @@
 
     {
       "mainCategory": "SALADS",
+
       "products": [
         {
           "name": "CHICKEN SALAD WITH PARMESAN",
@@ -173,40 +175,67 @@
       ]
     },
     {
+      "mainCategory": "BREAKFAST",
+
+      "products": []
+    },
+    {
       "mainCategory": "PASTAS",
+
       "products": []
     },
     {
       "mainCategory": "FAST FOOD",
+
       "products": []
     },
     {
       "mainCategory": "SOUPS",
+
       "products": []
     },
     {
       "mainCategory": "DESSERTS",
+
       "products": []
     },
     {
       "mainCategory": "JUICES",
+
       "products": []
     },
     {
       "mainCategory": "BEER",
+
       "products": []
     },
     {
       "mainCategory": "VODKA",
+
       "products": []
     },
     {
       "mainCategory": "TEQUILA",
+
       "products": []
     },
     {
       "mainCategory": "WHISKEY",
-      "products": []
+
+      "products": [
+        {
+          "name": "JAMESON",
+          "instructions": "",
+          "price": "6",
+          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+        },
+        {
+          "name": "JACK DANIELS",
+          "instructions": "",
+          "price": "6",
+          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/1325/6500/jack_daniels_old_7__90093.1516309412.jpg?c=2"
+        }
+      ]
     }
   ]
 }

@@ -59,11 +59,6 @@
   margin: auto;
 }
 
-.dish_info_cont {
-  padding: 20px;
-  /* position: relative; */
-}
-
 .instructions {
   font-size: 20px;
   color: rgb(52, 52, 52);
@@ -72,14 +67,11 @@
 
 .dish_info {
   width: 100%;
-  /* height: 120px; */
-  /* overflow: hidden; */
+  padding: 20px;
   background-color: #fff;
   transition: all 0.2s;
-  /* position: absolute; */
   left: 0;
   padding: 20px;
-  /* transition: height 0.3s ease, transform 0.3s ease; */
 }
 
 .dish_info:hover {

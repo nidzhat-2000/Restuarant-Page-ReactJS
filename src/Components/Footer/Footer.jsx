@@ -53,7 +53,10 @@ export default function Footer() {
               {menus?.map((menu, i) => {
                 return (
                   <Link
-                    to={`/${menu.toLowerCase()}`}
+                    to={`/${(menu.includes(' ')
+                      ? menu.split(' ').join('_')
+                      : menu
+                    ).toLowerCase()}`}
                     className={styles.menu}
                     key={i}
                     value={menu}

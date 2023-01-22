@@ -5,9 +5,13 @@ import styles from './About.module.css';
 // LazyLoad ⤵
 const RestAbout = lazy(() => import('./RestAbout'));
 
-export default function About({ data, about }) {
+export default function About({ data }) {
   const route = useLocation();
   const rest = route.pathname === '/about';
+
+  if (rest) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <div className="about">
