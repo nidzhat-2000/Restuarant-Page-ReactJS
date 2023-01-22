@@ -2,6 +2,7 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './Desserts.module.css';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 
 export default function Desserts({ data }) {
   const header = data?.header;
@@ -21,10 +22,12 @@ export default function Desserts({ data }) {
           {products?.map((product, i) => {
             const { img, info } = product;
             return (
-              <div className={styles.one_desert} key={i}>
-                <LazyLoadImage alt={info} src={img} />
-                <span>{info}</span>
-              </div>
+              <Link to="/menu/desserts" key={i}>
+                <div className={styles.one_desert}>
+                  <LazyLoadImage alt={info} src={img} />
+                  <span>{info}</span>
+                </div>
+              </Link>
             );
           })}
         </Box>

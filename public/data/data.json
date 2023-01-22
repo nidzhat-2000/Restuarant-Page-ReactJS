@@ -46,27 +46,31 @@
   },
   "gallery": [
     {
-      "category": "Main Menu",
+      "category": { "description": "Main Menu", "url": "snacks" },
       "img": "https://cafecity.az/media/menu_images/69050270_101922254548406_547788985154404352_o.png.330x330_q85_box-0%2C0%2C1000%2C1000_crop_detail.jpg"
     },
     {
-      "category": "Breakfast",
+      "category": { "description": "Breakfast", "url": "breakfast" },
       "img": "https://cafecity.az/media/menu_images/download_1.png.330x330_q85_box-0%2C0%2C330%2C330_crop_detail.jpg"
     },
     {
-      "category": "Asia Kitchen",
+      "category": { "description": "Asia Kitchen", "url": "juices" },
+
       "img": "https://cafecity.az/media/menu_images/Asiya-Metbexi-Oblojka.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
     },
     {
-      "category": "City Pub Menu",
+      "category": { "description": "City Pub Menu", "url": "fast_food" },
+
       "img": "https://cafecity.az/media/menu_images/citypub.png.330x330_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
     },
     {
-      "category": "Drinks",
+      "category": { "description": "Drinks", "url": "pastas" },
+
       "img": "https://cafecity.az/media/menu_images/Cocktails-Menu-Oblojka_copy.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.png"
     },
     {
-      "category": "Alcoholic Drinks",
+      "category": { "description": "Alcoholic Drinks", "url": "snacks" },
+
       "img": "https://cafecity.az/media/menu_images/city_park_MCN5cnU.jpg.330x330_q85_box-0%2C1111%2C4461%2C5567_crop_detail.jpg"
     }
   ],
@@ -100,7 +104,7 @@
   ],
   "menuCover": "https://cafecity.az/media/menu_images_header/CC-Site-Long-New-Menu-2021_y6nY6YH.png.1440x266_q85_box-0%2C0%2C1434%2C266_crop_detail.jpg",
   "menu": [
-    {
+    {          
       "mainCategory": "SNACKS",
 
       "products": [
@@ -177,7 +181,62 @@
     {
       "mainCategory": "BREAKFAST",
 
-      "products": []
+      "products": [
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "ENGLISH BREAKFAST",
+          "instructions": "Eggs, toast, sausages, baked tomatoes with gouda cheese, mushrooms, red beans in tomato sauce",
+          "price": "7",
+          "img": "https://cafecity.az/media/product_image/English-Breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "EGG-TOMATO",
+          "instructions": "Egg, tomato",
+          "price": "8",
+          "img": "https://cafecity.az/media/product_image/Eggs-with-Tomatoes.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "KUKU",
+          "instructions": "Eggs, greens, butter, yogurt",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Greens-Kuku.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "BREAKFAST WITH GOLDFISH AND AVOCADO",
+          "instructions": "Avocado, smoked goldfish, egg, tomato, spinach",
+          "price": "9",
+          "img": "https://cafecity.az/media/product_image/Salmon-and-avocado-breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "SAUSAGE EGG",
+          "instructions": "Egg, sausage",
+          "price": "8",
+          "img": "https://cafecity.az/media/product_image/Omelet-with-sujuk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        }
+      ]
     },
     {
       "mainCategory": "PASTAS",
@@ -187,7 +246,20 @@
     {
       "mainCategory": "FAST FOOD",
 
-      "products": []
+      "products": [
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "name": "PIZZA-OMLET",
+          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+          "price": "6",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        }
+      ]
     },
     {
       "mainCategory": "SOUPS",

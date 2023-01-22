@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { setMenu } from '../../redux/slices/menuSlice';
 import FoodCard from './FoodCard';
 import styles from './Menu.module.css';
@@ -9,9 +9,22 @@ import styles from './Menu.module.css';
 export default function Menu({ data, menuCover }) {
   const [foods, setFoods] = useState(null);
   const ref = useRef();
+  const route = useLocation();
   const { submenu } = useParams();
   const dispatch = useDispatch();
   const { menu } = useSelector(state => state.menuSlice);
+
+  // const urls = route.pathname.split('/').slice(1).join(' / ');
+  const urls = 'menu/snacks/cart';
+
+  console.log(urls.slice(0, urls.lastIndexOf('/')));
+
+  if (route.pathname.includes('menu')) {
+    window.scrollTo({
+      top: 282,
+      behavior: 'smooth',
+    });
+  }
 
   useEffect(() => {
     if (data) {
@@ -22,10 +35,22 @@ export default function Menu({ data, menuCover }) {
     }
   }, []);
 
+  let lowerCategory;
+  let spaceIncludes;
+  let splittedCategory;
+
   useEffect(() => {
-    const needed = menu.find(
-      eachMenu => eachMenu.mainCategory.toLowerCase() === submenu.toLowerCase()
-    );
+    const needed = menu.find(eachMenu => {
+      lowerCategory = eachMenu.mainCategory.toLowerCase();
+      spaceIncludes = lowerCategory.includes(' ');
+      splittedCategory = lowerCategory.split(' ').join('_');
+
+      return (
+        (spaceIncludes ? splittedCategory : lowerCategory) ===
+        submenu.toLowerCase()
+      );
+    });
+
     setFoods(needed.products);
   }, [submenu]);
 
@@ -47,20 +72,30 @@ export default function Menu({ data, menuCover }) {
         </article>
       </div>
 
+      <section>
+        <h3>{urls}</h3>
+      </section>
+
       <section className={styles.menu}>
         <article className={styles.categories} ref={ref}>
           {(menu ?? data)?.map((eachMenu, i) => {
             const { mainCategory } = eachMenu;
+            lowerCategory = mainCategory.toLowerCase();
+            spaceIncludes = lowerCategory.includes(' ');
+            splittedCategory = lowerCategory.split(' ').join('_');
+
             return (
               <Link
                 key={i}
-                to={`/menu/${mainCategory.toLowerCase()}`}
+                to={`/menu/${spaceIncludes ? splittedCategory : lowerCategory}`}
                 style={{ textDecoration: 'none' }}
               >
                 <div className={styles.category_name}>
                   <h4
                     className={
-                      submenu === mainCategory.toLowerCase()
+                      (submenu.includes('_')
+                        ? submenu.split('_').join(' ')
+                        : submenu) === lowerCategory
                         ? styles.active
                         : ''
                     }

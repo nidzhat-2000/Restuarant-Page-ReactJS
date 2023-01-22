@@ -37,6 +37,7 @@
   align-items: center;
   transition: all 1s;
   margin-bottom: 40px;
+  font-family: 'FuturaPtBook', sans-serif;
 }
 
 .category_name > h4:hover {
@@ -75,7 +76,7 @@
 }
 
 .dish_info:hover {
-  height: 290px;
+  height: 270px;
   transform: translateY(-100%);
   transition: all 0.5s;
 }

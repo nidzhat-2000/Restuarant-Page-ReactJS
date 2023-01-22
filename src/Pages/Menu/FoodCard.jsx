@@ -3,8 +3,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './Menu.module.css';
 
 export default function FoodCard({ foods }) {
-  // console.log(foods);
-
   return (
     <>
       {foods?.map((product, i) => {
@@ -30,7 +28,7 @@ export default function FoodCard({ foods }) {
               </div>
               <span className={styles.price}>
                 {price.padEnd(
-                  `${length === 3 ? 4 : 5}`,
+                  `${length >= 2 ? 5 : 4}`,
                   `${dot ? '00' : ',00'}`
                 )}
                 <p style={{ marginLeft: '5px' }}>₼</p>

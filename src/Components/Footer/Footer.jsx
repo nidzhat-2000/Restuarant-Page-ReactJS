@@ -4,13 +4,12 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styles from './Footer.module.css';
 import useFetch from '../../utils/useFetch';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Creater from './Creater';
 
-export default function Footer() {
-  const { data } = useFetch('./data/data.json');
-  const carts = data?.footer.carts;
-  const menus = data?.footer.menus;
+export default function Footer({ data }) {
+  const carts = data?.carts;
+  const menus = data?.menus;
 
   const scroll = () => {
     window.scrollTo({
@@ -18,6 +17,8 @@ export default function Footer() {
       behaviour: 'smooth',
     });
   };
+
+  const route = useLocation();
 
   const icons = [
     <FacebookIcon style={{ fontSize: 50, color: '#139df8' }} />,
@@ -53,13 +54,16 @@ export default function Footer() {
               {menus?.map((menu, i) => {
                 return (
                   <Link
-                    to={`/${(menu.includes(' ')
-                      ? menu.split(' ').join('_')
-                      : menu
-                    ).toLowerCase()}`}
+                    to={`/${
+                      menu === 'Menu'
+                        ? `menu/snacks`
+                        : (menu.includes(' ')
+                            ? menu.split(' ').join('_')
+                            : menu
+                          ).toLowerCase()
+                    }`}
                     className={styles.menu}
                     key={i}
-                    value={menu}
                   >
                     {menu}
                   </Link>

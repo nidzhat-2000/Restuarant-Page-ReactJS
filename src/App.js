@@ -4,12 +4,12 @@ import MainNav from './Components/Navbar/Navbar';
 import Home from './Home';
 import Footer from './Components/Footer/Footer';
 import useFetch from './utils/useFetch';
-import OurTeam from './Pages/OurTeam/OurTeam';
 
 // LazyLoaded components ⤵
 const Menu = lazy(() => import('./Pages/Menu/Menu'));
 const About = lazy(() => import('./Pages/About/About'));
 const Branches = lazy(() => import('./Pages/Branches/Branches'));
+const OurTeam = lazy(() => import('./Pages/OurTeam/OurTeam'));
 
 function App() {
   const { data } = useFetch('../data/data.json');
@@ -17,6 +17,7 @@ function App() {
   const about = data?.about;
   const menuCover = data?.menuCover;
   const menu = data?.menu;
+  const footer = data?.footer;
 
   return (
     <div className="App">
@@ -33,7 +34,7 @@ function App() {
           <Route element={<OurTeam />} path="/our_team" />
         </Routes>
       </Suspense>
-      <Footer />
+      <Footer data={footer} />
     </div>
   );
 }

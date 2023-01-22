@@ -3,7 +3,14 @@
   margin: 100px auto;
   width: 85%;
   color: #5a5a5a;
+}
 
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: #5a5a5a;
+  text-decoration: none;
 }
 
 .one_desert {

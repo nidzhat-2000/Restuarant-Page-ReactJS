@@ -12,16 +12,19 @@ export default function Gallery({ data }) {
         <article className={styles.dishes_container}>
           {data?.map((dish, i) => {
             const { img, category } = dish;
+            const { url } = category;
             return (
               <Card key={i} className={styles.card}>
-                <Link to="/menu/breakfast">
+                <Link to={`/menu/${url}`}>
                   <LazyLoadImage
                     className={styles.img}
                     variant="top"
                     src={img}
                   />
                   <Card.Title className={styles.box}>
-                    <span className={styles.category_name}>{category}</span>
+                    <span className={styles.category_name}>
+                      {category.description}
+                    </span>
                   </Card.Title>
                 </Link>
               </Card>
