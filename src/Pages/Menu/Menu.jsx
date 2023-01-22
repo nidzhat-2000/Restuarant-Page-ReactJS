@@ -72,9 +72,9 @@ export default function Menu({ data, menuCover }) {
         </article>
       </div>
 
-      <section>
+      {/* <section>
         <h3>{urls}</h3>
-      </section>
+      </section> */}
 
       <section className={styles.menu}>
         <article className={styles.categories} ref={ref}>
