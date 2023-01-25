@@ -46,11 +46,11 @@
   },
   "gallery": [
     {
-      "category": { "description": "Main Menu", "url": "snacks" },
+      "category": { "description": "Main Menu", "url": "main_menu" },
       "img": "https://cafecity.az/media/menu_images/69050270_101922254548406_547788985154404352_o.png.330x330_q85_box-0%2C0%2C1000%2C1000_crop_detail.jpg"
     },
     {
-      "category": { "description": "Breakfast", "url": "breakfast" },
+      "category": { "description": "Breakfast", "url": "breakfast/snacks" },
       "img": "https://cafecity.az/media/menu_images/download_1.png.330x330_q85_box-0%2C0%2C330%2C330_crop_detail.jpg"
     },
     {
@@ -103,211 +103,264 @@
     }
   ],
   "menuCover": "https://cafecity.az/media/menu_images_header/CC-Site-Long-New-Menu-2021_y6nY6YH.png.1440x266_q85_box-0%2C0%2C1434%2C266_crop_detail.jpg",
+
   "menu": [
-    {          
-      "mainCategory": "SNACKS",
-
-      "products": [
-        {
-          "name": "SPRING ROLLS WITH CHICKEN AND VEGETABLES",
-          "instructions": "Chicken fillet, bell pepper, carrot, onion, cabbage, garlic, cumin, soy sauce",
-          "price": "6,9",
-          "img": "https://cafecity.az/media/product_image/SPRING-ROLLS-WITH-CHICKEN-AND-VEGETABLES_5KpVJuB.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "PROFITROL WITH CHICKEN, MUSHROOMS AND FRIED POTATOES",
-          "instructions": "Profitrol, Dutch cheese, onions, mushrooms, chicken fillet, sour cream, cream, potatoes with garlic",
-          "price": "10,3",
-          "img": "https://cafecity.az/media/product_image/PROFITEROLES-WITH-CHICKEN-MUSHROOMS-AND-FRIED-POTATO_YbcVnoo.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "VARIETIES OF CHEESE",
-          "instructions": "Gouda cheese, marinated white cheese, mozzarella cheese, parmesan cheese",
-          "price": "11,4",
-          "img": "https://cafecity.az/media/product_image/CHEESE-PLATE_Z9xDTXP.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "BEER SET",
-          "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
-          "price": "19",
-          "img": "https://cafecity.az/media/product_image/BEER-PLATE_U3xRHcg.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        }
-      ]
-    },
-
     {
-      "mainCategory": "SALADS",
+      "mainMenu": "Main Menu",
 
-      "products": [
+      "subMenus": [
         {
-          "name": "CHICKEN SALAD WITH PARMESAN",
-          "instructions": "Chicken fillet, parmesan cheese, cream cheese, cherry tomatoes, lettuce, garlic croutons, pesto sauce",
-          "price": "10",
-          "img": "https://cafecity.az/media/product_image/CHICKEN-SALAD-WITH-PARMESAN-CHEESE_sEWh9UV.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "SALADS",
+
+          "products": [
+            {
+              "name": "CHICKEN SALAD WITH PARMESAN",
+              "instructions": "Chicken fillet, parmesan cheese, cream cheese, cherry tomatoes, lettuce, garlic croutons, pesto sauce",
+              "price": "10",
+              "img": "https://cafecity.az/media/product_image/CHICKEN-SALAD-WITH-PARMESAN-CHEESE_sEWh9UV.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+
+            {
+              "name": "SALAD WITH BROKEN CHICKEN",
+              "instructions": "Smoked chicken, fried onions, corn, red canned beans, pickles, cucumbers, tomatoes, garlic croutons, iceberg lettuce, mayonnaise",
+              "price": "10,3",
+              "img": "https://cafecity.az/media/product_image/SMOKED-CHICKEN-SALAD_YeAV8bM.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "GREEK SALAD",
+              "instructions": "Chicken fillet, tomato, bell pepper, white beans, sweet corn, lettuce, olive oil, sweet chili sauce",
+              "price": "9",
+              "img": "https://cafecity.az/media/product_image/GREEK-SALAD_Q9brJkt.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "CHICKEN SALAD",
+              "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
+              "price": "19",
+              "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "SALAD WITH FRIED GOLDFISH",
+              "instructions": "Salmon, garlic croutons, egg, radish, tomato, parmesan cheese, arugula, lettuce, Caesar dressing",
+              "price": "15,8",
+              "img": "https://cafecity.az/media/product_image/FRIED-SALMON-WITH-VEGETABLES-IN-SUN-DRIED-TOMATOES-SAUCE_pI0z0zk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "CAESAR SALAD",
+              "instructions": "Chicken fillet, garlic fried breadcrumbs, parmesan cheese, iceberg lettuce, tomato, Caesar dressing",
+              "price": "12,8",
+              "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            }
+          ]
         },
 
         {
-          "name": "SALAD WITH BROKEN CHICKEN",
-          "instructions": "Smoked chicken, fried onions, corn, red canned beans, pickles, cucumbers, tomatoes, garlic croutons, iceberg lettuce, mayonnaise",
-          "price": "10,3",
-          "img": "https://cafecity.az/media/product_image/SMOKED-CHICKEN-SALAD_YeAV8bM.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "GREEK SALAD",
-          "instructions": "Chicken fillet, tomato, bell pepper, white beans, sweet corn, lettuce, olive oil, sweet chili sauce",
-          "price": "9",
-          "img": "https://cafecity.az/media/product_image/GREEK-SALAD_Q9brJkt.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "CHICKEN SALAD",
-          "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
-          "price": "19",
-          "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "SALAD WITH FRIED GOLDFISH",
-          "instructions": "Salmon, garlic croutons, egg, radish, tomato, parmesan cheese, arugula, lettuce, Caesar dressing",
-          "price": "15,8",
-          "img": "https://cafecity.az/media/product_image/FRIED-SALMON-WITH-VEGETABLES-IN-SUN-DRIED-TOMATOES-SAUCE_pI0z0zk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "CAESAR SALAD",
-          "instructions": "Chicken fillet, garlic fried breadcrumbs, parmesan cheese, iceberg lettuce, tomato, Caesar dressing",
-          "price": "12,8",
-          "img": "https://cafecity.az/media/product_image/CAESAR-SALAD_gehNbhJ.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        }
-      ]
-    },
-    {
-      "mainCategory": "BREAKFAST",
+          "category": "PASTAS",
 
-      "products": [
-        {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "products": [
+            {
+              "name": "JAMESON",
+              "instructions": "",
+              "price": "6",
+              "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+            },
+            {
+              "name": "JACK DANIELS",
+              "instructions": "",
+              "price": "6",
+              "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/1325/6500/jack_daniels_old_7__90093.1516309412.jpg?c=2"
+            }
+          ]
         },
         {
-          "name": "ENGLISH BREAKFAST",
-          "instructions": "Eggs, toast, sausages, baked tomatoes with gouda cheese, mushrooms, red beans in tomato sauce",
-          "price": "7",
-          "img": "https://cafecity.az/media/product_image/English-Breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "FAST FOOD",
+
+          "products": [
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            }
+          ]
         },
         {
-          "name": "EGG-TOMATO",
-          "instructions": "Egg, tomato",
-          "price": "8",
-          "img": "https://cafecity.az/media/product_image/Eggs-with-Tomatoes.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "SOUPS",
+
+          "products": [
+            {
+              "name": "JAMESON",
+              "instructions": "",
+              "price": "6",
+              "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+            }
+          ]
         },
+
         {
-          "name": "KUKU",
-          "instructions": "Eggs, greens, butter, yogurt",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Greens-Kuku.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "BREAKFAST WITH GOLDFISH AND AVOCADO",
-          "instructions": "Avocado, smoked goldfish, egg, tomato, spinach",
-          "price": "9",
-          "img": "https://cafecity.az/media/product_image/Salmon-and-avocado-breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "SAUSAGE EGG",
-          "instructions": "Egg, sausage",
-          "price": "8",
-          "img": "https://cafecity.az/media/product_image/Omelet-with-sujuk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
-        },
-        {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "DESSERTS",
+
+          "products": [
+            {
+              "name": "JAMESON",
+              "instructions": "",
+              "price": "6",
+              "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+            }
+          ]
         }
       ]
     },
     {
-      "mainCategory": "PASTAS",
+      "mainMenu": "Breakfast",
 
-      "products": []
-    },
-    {
-      "mainCategory": "FAST FOOD",
-
-      "products": [
+      "subMenus": [
         {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "SNACKS",
+
+          "products": [
+            {
+              "name": "SPRING ROLLS WITH CHICKEN AND VEGETABLES",
+              "instructions": "Chicken fillet, bell pepper, carrot, onion, cabbage, garlic, cumin, soy sauce",
+              "price": "6,9",
+              "img": "https://cafecity.az/media/product_image/SPRING-ROLLS-WITH-CHICKEN-AND-VEGETABLES_5KpVJuB.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "PROFITROL WITH CHICKEN, MUSHROOMS AND FRIED POTATOES",
+              "instructions": "Profitrol, Dutch cheese, onions, mushrooms, chicken fillet, sour cream, cream, potatoes with garlic",
+              "price": "10,3",
+              "img": "https://cafecity.az/media/product_image/PROFITEROLES-WITH-CHICKEN-MUSHROOMS-AND-FRIED-POTATO_YbcVnoo.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "VARIETIES OF CHEESE",
+              "instructions": "Gouda cheese, marinated white cheese, mozzarella cheese, parmesan cheese",
+              "price": "11,4",
+              "img": "https://cafecity.az/media/product_image/CHEESE-PLATE_Z9xDTXP.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "BEER SET",
+              "instructions": "Mozzarella cheese nuggets, garlic toast with pesto sauce, toasted breadsticks, grilled braided cheese, potato chips, grilled viper",
+              "price": "19",
+              "img": "https://cafecity.az/media/product_image/BEER-PLATE_U3xRHcg.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            }
+          ]
         },
+
         {
-          "name": "PIZZA-OMLET",
-          "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
-          "price": "6",
-          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+          "category": "BREAKFAST",
+
+          "products": [
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "ENGLISH BREAKFAST",
+              "instructions": "Eggs, toast, sausages, baked tomatoes with gouda cheese, mushrooms, red beans in tomato sauce",
+              "price": "7",
+              "img": "https://cafecity.az/media/product_image/English-Breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "EGG-TOMATO",
+              "instructions": "Egg, tomato",
+              "price": "8",
+              "img": "https://cafecity.az/media/product_image/Eggs-with-Tomatoes.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "KUKU",
+              "instructions": "Eggs, greens, butter, yogurt",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Greens-Kuku.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "BREAKFAST WITH GOLDFISH AND AVOCADO",
+              "instructions": "Avocado, smoked goldfish, egg, tomato, spinach",
+              "price": "9",
+              "img": "https://cafecity.az/media/product_image/Salmon-and-avocado-breakfast.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "SAUSAGE EGG",
+              "instructions": "Egg, sausage",
+              "price": "8",
+              "img": "https://cafecity.az/media/product_image/Omelet-with-sujuk.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            },
+            {
+              "name": "PIZZA-OMLET",
+              "instructions": "Egg, bell pepper, green onion, tomato, feta cheese",
+              "price": "6",
+              "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+            }
+          ]
         }
       ]
     },
     {
-      "mainCategory": "SOUPS",
+      "mainMenu": "Drinks",
 
-      "products": []
-    },
-    {
-      "mainCategory": "DESSERTS",
+      "subMenus": {
+        "alcholoic": [
+          {
+            "category": "BEER",
 
-      "products": []
-    },
-    {
-      "mainCategory": "JUICES",
+            "products": []
+          },
+          {
+            "category": "VODKA",
 
-      "products": []
-    },
-    {
-      "mainCategory": "BEER",
+            "products": []
+          },
+          {
+            "category": "TEQUILA",
 
-      "products": []
-    },
-    {
-      "mainCategory": "VODKA",
+            "products": []
+          },
+          {
+            "category": "WHISKEY",
 
-      "products": []
-    },
-    {
-      "mainCategory": "TEQUILA",
+            "products": [
+              {
+                "name": "JAMESON",
+                "instructions": "",
+                "price": "6",
+                "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+              },
+              {
+                "name": "JACK DANIELS",
+                "instructions": "",
+                "price": "6",
+                "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/1325/6500/jack_daniels_old_7__90093.1516309412.jpg?c=2"
+              }
+            ]
+          }
+        ],
 
-      "products": []
-    },
-    {
-      "mainCategory": "WHISKEY",
+        "juices": [
+          {
+            "category": "JUICES",
 
-      "products": [
-        {
-          "name": "JAMESON",
-          "instructions": "",
-          "price": "6",
-          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
-        },
-        {
-          "name": "JACK DANIELS",
-          "instructions": "",
-          "price": "6",
-          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/1325/6500/jack_daniels_old_7__90093.1516309412.jpg?c=2"
-        }
-      ]
+            "products": []
+          }
+        ]
+      }
     }
   ]
 }

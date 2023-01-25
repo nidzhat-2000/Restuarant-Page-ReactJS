@@ -1,5 +1,7 @@
 import React from 'react';
 
+// what is this in js 
+
 export default function Creater() {
   return (
     <div

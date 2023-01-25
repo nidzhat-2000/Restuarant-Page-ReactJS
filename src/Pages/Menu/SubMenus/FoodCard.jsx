@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import styles from './Menu.module.css';
+import { useSelector } from 'react-redux';
+import styles from '../Menu.module.css';
 
 export default function FoodCard({ foods }) {
+  // console.log(foods);
+  const { menuCategories } = useSelector(state => state.menuSlice);
+  // console.log(menuCategories);
+
+  // useEffect(() => {
+  //   console.log(foods?.[0].price);
+  // }, []);
+
   return (
     <>
       {foods?.map((product, i) => {

@@ -4,6 +4,7 @@ import MainNav from './Components/Navbar/Navbar';
 import Home from './Home';
 import Footer from './Components/Footer/Footer';
 import useFetch from './utils/useFetch';
+import SubMenus from './Pages/Menu/SubMenus/SubMenus';
 
 // LazyLoaded components ⤵
 const Menu = lazy(() => import('./Pages/Menu/Menu'));
@@ -18,6 +19,7 @@ function App() {
   const menuCover = data?.menuCover;
   const menu = data?.menu;
   const footer = data?.footer;
+  const gallery = data?.gallery;
 
   return (
     <div className="App">
@@ -28,9 +30,13 @@ function App() {
           <Route element={<About data={about} />} path="/about" />
           <Route element={<Branches data={branches} />} path="/branches" />
           <Route
-            element={<Menu data={menu} menuCover={menuCover} />}
-            path="/menu/:submenu"
-          />
+            element={
+              <Menu data={menu} menuCover={menuCover} gallery={gallery} />
+            }
+            path="/menu/:category"
+          >
+            <Route element={<SubMenus />} path=":submenu" />
+          </Route>
           <Route element={<OurTeam />} path="/our_team" />
         </Routes>
       </Suspense>
