@@ -12,6 +12,30 @@ export default function Home({ data }) {
   const gallery = data?.gallery;
   const about = data?.about;
 
+  // const testing = (obj, adi, hali) => {
+  //   const objAdi = obj;
+  //   return objAdi?.[adi].toLowerCase() === hali.toLowerCase();
+  // };
+
+  // const MyObj = {
+  //   games: [
+  //     { name: 'Dama', repair: 'kart' },
+  //     { name: 'Karol', repair: 'Eyyub' },
+  //     { name: 'Karol', repair: 'Ezrail' },
+  //     { name: 'Karol', repair: 'aYtac' },
+  //     { name: 'Karol', repair: 'daMino' },
+  //     { name: 'Karol', repair: 'KaraTE' },
+  //     { name: 'Karol', repair: 'eshq' },
+  //   ],
+  // };
+
+  // const result = MyObj.games.find(game => {
+  //   // console.log(game);
+  //   return testing(game, 'repair', 'Karate');
+  // });
+
+  // console.log(result);
+
   return (
     <div>
       <ControlledCarousel data={slider} />

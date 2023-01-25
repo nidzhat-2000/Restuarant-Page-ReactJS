@@ -4,7 +4,7 @@ import MainNav from './Components/Navbar/Navbar';
 import Home from './Home';
 import Footer from './Components/Footer/Footer';
 import useFetch from './utils/useFetch';
-import SubMenus from './Pages/Menu/SubMenus/SubMenus';
+import SubMenus from './Pages/Menu/SubMenus/SubMenuNames';
 
 // LazyLoaded components ⤵
 const Menu = lazy(() => import('./Pages/Menu/Menu'));
