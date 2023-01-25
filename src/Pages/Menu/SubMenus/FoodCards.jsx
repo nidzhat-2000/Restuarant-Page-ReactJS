@@ -4,14 +4,6 @@ import { useSelector } from 'react-redux';
 import styles from '../Menu.module.css';
 
 export default function FoodCard({ foods }) {
-  // console.log(foods);
-  const { menuCategories } = useSelector(state => state.menuSlice);
-  // console.log(menuCategories);
-
-  // useEffect(() => {
-  //   console.log(foods?.[0].price);
-  // }, []);
-
   return (
     <>
       {foods?.map((product, i) => {

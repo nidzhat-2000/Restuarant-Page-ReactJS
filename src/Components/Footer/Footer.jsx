@@ -3,8 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styles from './Footer.module.css';
-import useFetch from '../../utils/useFetch';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Creater from './Creater';
 
 export default function Footer({ data }) {
@@ -17,8 +16,6 @@ export default function Footer({ data }) {
       behaviour: 'smooth',
     });
   };
-
-  const route = useLocation();
 
   const icons = [
     <FacebookIcon style={{ fontSize: 50, color: '#139df8' }} />,

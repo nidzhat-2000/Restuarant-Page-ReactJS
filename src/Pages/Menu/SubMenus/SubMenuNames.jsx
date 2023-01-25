@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { lazy, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { setMenuCategories } from '../../../redux/slices/menuSlice';
 import use_Upper_Lower_Underscore_IssuesFixer from '../../../utils/useNameIssueFixer';
-import FoodCard from './FoodCards';
-import UpperLinks from './UpperLinks';
 import styles from '../Menu.module.css';
+
+// Lazy Loaded Components ⤵
+let FoodCard = lazy(() => import('./FoodCards'));
+let UpperLinks = lazy(() => import('./UpperLinks'));
 
 export default function SubMenus({ subMenus }) {
   const { submenu } = useParams();
@@ -35,10 +37,6 @@ export default function SubMenus({ subMenus }) {
     }
   }, [submenu]);
 
-  let lowerCategory;
-  let spaceIncludes;
-  let joinedCategory;
-
   return (
     <>
       <UpperLinks />
@@ -46,9 +44,9 @@ export default function SubMenus({ subMenus }) {
         <article className={styles.categories}>
           {subMenus?.map((eachMenu, i) => {
             const { category } = eachMenu;
-            lowerCategory = category.toLowerCase();
-            spaceIncludes = lowerCategory.includes(' ');
-            joinedCategory = lowerCategory.split(' ').join('_');
+            let lowerCategory = category.toLowerCase();
+            let spaceIncludes = lowerCategory.includes(' ');
+            let joinedCategory = lowerCategory.split(' ').join('_');
 
             return (
               <Link

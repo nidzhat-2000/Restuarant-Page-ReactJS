@@ -2,19 +2,13 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function UpperLinks() {
-  let lowerCategory;
-  let spaceIncludes;
-  let joinedCategory;
-  let route = useLocation();
-
+  const route = useLocation();
   const routeElements = route.pathname.split('/').slice(-2);
-  let replaced;
-  let space;
 
   const menuLinks = routeElements.map(link => {
     if (link.includes('_')) {
-      replaced = link.replace('_', ' ');
-      space = replaced.indexOf(' ');
+      let replaced = link.replace('_', ' ');
+      let space = replaced.indexOf(' ');
       return (
         replaced[0].toUpperCase() +
         replaced.slice(1, space) +
@@ -28,16 +22,16 @@ export default function UpperLinks() {
 
   return (
     <section>
-      <ul>
+      <ul style={{ listStyle: 'none', display: 'flex', gap: '10px' }}>
         <li>
           <Link to="/" style={{ textDecoration: 'none' }}>
-            Home
+            Home /
           </Link>
         </li>
         {menuLinks.map((route, i) => {
-          lowerCategory = route.toLowerCase();
-          spaceIncludes = lowerCategory.includes(' ');
-          joinedCategory = lowerCategory.split(' ').join('_');
+          let lowerCategory = route.toLowerCase();
+          let spaceIncludes = lowerCategory.includes(' ');
+          let joinedCategory = lowerCategory.split(' ').join('_');
 
           return (
             <li key={i}>
@@ -49,9 +43,12 @@ export default function UpperLinks() {
                       : `/menu/${lowerCategory}`
                     : lowerCategory
                 }
+                disabled={i == menuLinks.length}
                 style={{ textDecoration: 'none' }}
               >
-                {route.includes('_') ? route.replace('_', ' ') : route}
+                {route.includes('_')
+                  ? route.replace('_', ' ') + ' / '
+                  : route + ' / '}
               </Link>
             </li>
           );
