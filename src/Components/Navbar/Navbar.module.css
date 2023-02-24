@@ -41,6 +41,7 @@
   background-color: #efdbb2cb;
   font-family: 'FuturaPtBold', sans-serif;
   color: rgb(218, 216, 216);
+  padding-right: 50px;
 }
 
 .drop_menu {
@@ -94,7 +95,7 @@
   text-decoration: none;
 }
 
-.nav_btn > a > a { 
+.nav_btn > a > a {
   text-decoration: none;
 }
 
