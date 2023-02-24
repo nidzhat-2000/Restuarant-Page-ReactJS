@@ -1,8 +1,12 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { useFetch } from '../../utils/exporter';
 import styles from './Branches.module.css';
 
-export default function Branches({ data }) {
+export default function Branches() {
+  const { data } = useFetch(undefined, 'restaurants');
+
+  const branches = data?.restaurants;
   const route = useLocation();
   const rest = route.pathname === '/branches';
 
@@ -14,7 +18,7 @@ export default function Branches({ data }) {
     <section className={styles.branches}>
       <h5 className="header">Our Branches</h5>
       <article className={styles.branches_cont}>
-        {data?.map((res, i) => {
+        {branches?.map((res, i) => {
           const { name, address, contact } = res;
           return (
             <div className={styles.branch} key={i}>
@@ -24,7 +28,6 @@ export default function Branches({ data }) {
             </div>
           );
         })}
-        {/* <h3></h3> */}
       </article>
     </section>
   );

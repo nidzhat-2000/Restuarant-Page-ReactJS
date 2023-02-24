@@ -1,0 +1,13 @@
+{
+  "footer": {
+    "menus": ["About", "Menu", "Branches", "Our Team", "Interier"],
+    "carts": {
+      "img": "https://cafecity.az/static/assets/img/visa_mastercard.svg"
+    },
+    "icons": [
+      "FacebookIcon style={{ fontSize: 50, color: '#139df8' }} ",
+      "<YouTubeIcon style={{ fontSize: 50, color: '#f00' }} />",
+      "<InstagramIcon style={{ fontSize: 50, color: '#fc07b6' }} />"
+    ]
+  }
+}

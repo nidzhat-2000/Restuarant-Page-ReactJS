@@ -1,47 +1,35 @@
-import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import MainNav from './Components/Navbar/Navbar';
+import { Suspense } from 'react';
 import Home from './Home';
-import Footer from './Components/Footer/Footer';
-import useFetch from './utils/useFetch';
-// import SubMenus from './Pages/Menu/SubMenus/SubMenuNames';
-
-// LazyLoaded components ⤵
-let Menu = lazy(() => import('./Pages/Menu/Menu'));
-let SubMenus = lazy(() => import('./Pages/Menu/SubMenus/SubMenuNames'));
-let About = lazy(() => import('./Pages/About/About'));
-let Branches = lazy(() => import('./Pages/Branches/Branches'));
-let OurTeam = lazy(() => import('./Pages/OurTeam/OurTeam'));
+import { MainNav, Footer } from './Components/exporter';
+import {
+  About,
+  Branches,
+  Menu,
+  OurTeam,
+  SubMenuNames,
+  Error,
+  Interier,
+} from './Pages/exporter';
 
 function App() {
-  const { data } = useFetch('../data/data.json');
-  const branches = data?.restaurants;
-  const about = data?.about;
-  const menuCover = data?.menuCover;
-  const menu = data?.menu;
-  const footer = data?.footer;
-  const gallery = data?.gallery;
-
   return (
     <div className="App">
       <MainNav />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route element={<Home data={data} />} path="/" />
-          <Route element={<About data={about} />} path="/about" />
-          <Route element={<Branches data={branches} />} path="/branches" />
-          <Route
-            element={
-              <Menu data={menu} menuCover={menuCover} gallery={gallery} />
-            }
-            path="/menu/:category"
-          >
-            <Route element={<SubMenus />} path=":submenu" />
+          <Route element={<Home />} exact path="/" />
+          <Route element={<Error />} path="*" />
+          <Route element={<About />} path="/about" />
+          <Route element={<Branches />} path="/branches" />
+          <Route element={<Menu />} path="/menu/:category">
+            <Route element={<SubMenuNames />} path=":submenu" />
           </Route>
           <Route element={<OurTeam />} path="/our_team" />
+          <Route element={<Interier />} path="/interier" />
         </Routes>
       </Suspense>
-      <Footer data={footer} />
+      <Footer />
     </div>
   );
 }

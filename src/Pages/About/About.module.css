@@ -1,6 +1,8 @@
 .about {
   text-align: center;
-  margin: 100px auto 0 auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
   color: #5a5a5a;
 }
@@ -11,23 +13,83 @@
 }
 
 .linko {
-  margin-top: 340px;
+  font-size: 30px;
+  font-style: italic;
+  transform: translateY(-25px);
+  padding: 10px 35px;
+  color: rgb(139, 103, 97);
+  background-color: #efdbb2;
+  border-radius: 20px 0 0 20px;
+  transition: all 0.5s;
+}
+
+.cart {
+  font-size: 30px;
+  font-style: italic;
+  transform: translateY(-25px);
+  padding: 10px 20px;
+  color: #efdbb2;
+  background-color: rgb(139, 103, 97);
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 .link:link,
 .link:active,
 .link:visited {
   text-decoration: none;
-  font-size: 40px;
-  color: black;
-  font-style: italic;
-  transform: translateY(-25px);
+  display: flex;
+  width: 540px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  filter: brightness(90%);
+  transition: all 0.3s;
 }
 
 .link:hover {
   color: rgb(90, 89, 89);
-  transform: translateX(-5px);
-  transition: all 1s;
+  transform: translateX(5px);
+  transition: all 0.3s;
+  filter: brightness(100%);
+  cursor: default;
+}
+
+.click {
+  opacity: 0;
+}
+
+.arrow:hover {
+  opacity: 0;
+}
+
+.arrow:hover .click {
+  opacity: 1;
+}
+
+.my_element {
+  font-size: 30px;
+  font-style: italic;
+  transform: translateY(-25px);
+  padding: 10px 20px;
+  color: #efdbb2;
+  background-color: rgb(139, 103, 97);
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.my_element::before {
+  content: '>';
+  transition: transform 0.3s ease-in-out;
+}
+
+.my_element:hover::before {
+  content: 'Click';
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 
 .founder {
@@ -41,8 +103,20 @@
   flex-direction: column;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  width: 500px;
+}
+
 .founder_info > span {
   font-size: 30px;
   font-style: italic;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-top: 50px;
+  }
 }

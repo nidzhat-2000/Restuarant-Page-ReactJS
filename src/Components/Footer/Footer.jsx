@@ -2,13 +2,16 @@ import React from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
 import Creater from './Creater';
+import styles from './Footer.module.css';
+import { useFetch } from '../../utils/exporter';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-export default function Footer({ data }) {
-  const carts = data?.carts;
-  const menus = data?.menus;
+export default function Footer() {
+  let { data } = useFetch('../../', 'footer');
+  const carts = data?.footer.carts;
+  const menus = data?.footer.menus;
 
   const scroll = () => {
     window.scrollTo({
@@ -22,24 +25,25 @@ export default function Footer({ data }) {
     <YouTubeIcon style={{ fontSize: 50, color: '#f00' }} />,
     <InstagramIcon style={{ fontSize: 50, color: '#fc07b6' }} />,
   ];
+
   const urls = ['facebook', 'youtube', 'instagram'];
 
   return (
-    <>
+    <footer className={styles.main_footer}>
       <section className={styles.footer}>
         <div className={styles.container}>
           <article className={styles.follow_container}>
             <h5>Follow us at:</h5>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              {icons.map((icon, i) => {
+            <div className={styles.icons}>
+              {icons?.map((Icon, i) => {
                 return (
                   <a
                     key={i}
                     href={`https://www.${urls[i]}.com`}
                     target="_blank"
-                    style={{ color: 'blue' }}
+                    className={styles.icon}
                   >
-                    {icon}
+                    {Icon}
                   </a>
                 );
               })}
@@ -53,7 +57,7 @@ export default function Footer({ data }) {
                   <Link
                     to={`/${
                       menu === 'Menu'
-                        ? `menu/snacks`
+                        ? `menu/main_menu`
                         : (menu.includes(' ')
                             ? menu.split(' ').join('_')
                             : menu
@@ -74,21 +78,15 @@ export default function Footer({ data }) {
 
           <article className={styles.right}>
             <h5>Carts</h5>
-            {carts?.map((cart, i) => {
-              const { img } = cart;
-              return (
-                <img
-                  style={{ width: '158px', margin: '10px' }}
-                  key={i}
-                  src={img}
-                  alt={img}
-                />
-              );
-            })}
+            <LazyLoadImage
+              style={{ width: '158px', margin: '10px' }}
+              src={carts?.img}
+              alt="carts"
+            />
           </article>
         </div>
       </section>
       <Creater />
-    </>
+    </footer>
   );
 }

@@ -1,0 +1,59 @@
+{
+  "menu": [
+    {
+      "mainMenu": "MAIN MENU",
+
+      "subMenus": [
+        {
+          "category": "SALADS",
+          "img": "https://cafecity.az/media/product_image/CHICKEN-SALAD-WITH-PARMESAN-CHEESE_sEWh9UV.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "category": "PASTAS",
+          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+        },
+        {
+          "category": "FAST FOOD",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "category": "SOUPS",
+          "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+        }
+      ]
+    },
+
+    {
+      "mainMenu": "BREAKFAST",
+
+      "subMenus": [
+        {
+          "category": "SNACKS",
+          "img": "https://cafecity.az/media/product_image/SPRING-ROLLS-WITH-CHICKEN-AND-VEGETABLES_5KpVJuB.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        },
+        {
+          "category": "BREAKFAST",
+          "img": "https://cafecity.az/media/product_image/Pizza-Omelet.png.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+        }
+      ]
+    },
+
+    {
+      "mainMenu": "DESSERTS",
+      "subMenus": [
+        {
+          "category": "DESSERTS",
+
+          "products": [
+            {
+              "name": "JAMESON",
+              "instructions": "",
+              "price": "6",
+              "img": "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/484/17140/Jameson-Irish-Whiskey-1750__67058.1660238722.jpg?c=2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

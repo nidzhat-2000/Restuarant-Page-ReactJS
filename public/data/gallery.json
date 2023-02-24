@@ -1,0 +1,32 @@
+{
+  "gallery": [
+    {
+      "category": { "description": "Main Menu", "url": "main_menu" },
+      "img": "https://cafecity.az/media/menu_images/69050270_101922254548406_547788985154404352_o.png.330x330_q85_box-0%2C0%2C1000%2C1000_crop_detail.jpg"
+    },
+    {
+      "category": { "description": "Breakfast", "url": "breakfast/snacks" },
+      "img": "https://cafecity.az/media/menu_images/download_1.png.330x330_q85_box-0%2C0%2C330%2C330_crop_detail.jpg"
+    },
+    {
+      "category": { "description": "Asia Kitchen", "url": "juices" },
+
+      "img": "https://cafecity.az/media/menu_images/Asiya-Metbexi-Oblojka.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+    },
+    {
+      "category": { "description": "City Pub Menu", "url": "fast_food" },
+
+      "img": "https://cafecity.az/media/menu_images/citypub.png.330x330_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
+    },
+    {
+      "category": { "description": "Drinks", "url": "pastas" },
+
+      "img": "https://cafecity.az/media/menu_images/Cocktails-Menu-Oblojka_copy.png.330x330_q85_box-0%2C0%2C600%2C600_crop_detail.png"
+    },
+    {
+      "category": { "description": "Alcoholic Drinks", "url": "snacks" },
+
+      "img": "https://cafecity.az/media/menu_images/city_park_MCN5cnU.jpg.330x330_q85_box-0%2C1111%2C4461%2C5567_crop_detail.jpg"
+    }
+  ]
+}

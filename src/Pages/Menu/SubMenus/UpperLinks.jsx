@@ -1,58 +1,32 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import styles from '../Menu.module.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { linkIssuesFixer } from '../../../utils/exporter';
 
-export default function UpperLinks() {
-  const route = useLocation();
-  const routeElements = route.pathname.split('/').slice(-2);
-
-  const menuLinks = routeElements.map(link => {
-    if (link.includes('_')) {
-      let replaced = link.replace('_', ' ');
-      let space = replaced.indexOf(' ');
-      return (
-        replaced[0].toUpperCase() +
-        replaced.slice(1, space) +
-        ' ' +
-        replaced.slice(space + 1)[0].toUpperCase() +
-        replaced.slice(space + 2).toLowerCase()
-      );
-    }
-    return link[0].toUpperCase() + link.slice(1).toLowerCase();
-  });
+export default function UpperLinks({ links: { mainMenu, subMenu } }) {
+  const navigate = useNavigate();
 
   return (
-    <section>
-      <ul style={{ listStyle: 'none', display: 'flex', gap: '10px' }}>
-        <li>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            Home /
-          </Link>
+    <section className={styles.sublinks}>
+      <ul className={styles.sublinks_ul}>
+        <li
+          onClick={() =>
+            navigate('/', {
+              replace: 'true',
+            })
+          }
+        >
+          Home >
         </li>
-        {menuLinks.map((route, i) => {
-          let lowerCategory = route.toLowerCase();
-          let spaceIncludes = lowerCategory.includes(' ');
-          let joinedCategory = lowerCategory.split(' ').join('_');
+        <li>
+          <Link to={'/menu/' + mainMenu}>{linkIssuesFixer(mainMenu)} ></Link>
+        </li>
 
-          return (
-            <li key={i}>
-              <Link
-                to={
-                  i !== menuLinks.length
-                    ? spaceIncludes
-                      ? `/menu/${joinedCategory}`
-                      : `/menu/${lowerCategory}`
-                    : lowerCategory
-                }
-                disabled={i == menuLinks.length}
-                style={{ textDecoration: 'none' }}
-              >
-                {route.includes('_')
-                  ? route.replace('_', ' ') + ' / '
-                  : route + ' / '}
-              </Link>
-            </li>
-          );
-        })}
+        <li>
+          <span style={{ cursor: 'default' }}>
+            #{linkIssuesFixer(subMenu)}{' '}
+          </span>
+        </li>
       </ul>
     </section>
   );

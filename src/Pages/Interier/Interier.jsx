@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function OurTeam() {
+const Interier = () => {
   return (
     <div
       style={{
@@ -15,4 +15,6 @@ export default function OurTeam() {
       <h2>Not Ready yet :) </h2>
     </div>
   );
-}
+};
+
+export default Interier;

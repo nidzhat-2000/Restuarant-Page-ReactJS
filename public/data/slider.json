@@ -1,0 +1,15 @@
+{
+  "slider": [
+    {
+      "img": "https://www.winni.in/celebrate-relations/wp-content/uploads/2019/03/f7.jpg",
+      "info": "Our restaurant has been serving delicious dishes and desserts since 1990. ",
+      "description": "Main Menu"
+    },
+
+    {
+      "img": "https://cdn.hswstatic.com/gif/desserts-update.jpg",
+      "info": " Since its opening, our restaurant has been known for its mouth-watering food, warm atmosphere and friendly staff.",
+      "description": "Desserts"
+    }
+  ]
+}

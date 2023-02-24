@@ -1,0 +1,29 @@
+{
+  "restaurants": [
+    {
+      "name": "Özsüt Fountains Square",
+      "address": "Tarlan Aliyarbeyov str. 14",
+      "contact": "Contact: +994 (70) 314 00 11"
+    },
+    {
+      "name": "Department of Sciences",
+      "address": "Matbuat avenue, M. Seyidov street (in the park next to the Theological Mosque)",
+      "contact": "Contact: +994 (51) 351-00-11"
+    },
+    {
+      "name": "Ganjlik Mall branch",
+      "address": "Fatali Khan Khoyski str. 14",
+      "contact": "Contact: +994 (77) 351 00 11"
+    },
+    {
+      "name": "Winter park department",
+      "address": "Fuzuli St. 47",
+      "contact": "Contact: +994 (77) 341-00-11"
+    },
+    {
+      "name": "Atatürk Park Department",
+      "address": "Speech of Ganjlik m/st",
+      "contact": "Contact: +994 (70) 311-00-11"
+    }
+  ]
+}

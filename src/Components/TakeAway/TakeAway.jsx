@@ -7,8 +7,8 @@ export default function TakeAway() {
     <section className={styles.takeaway}>
       <div className={styles.container}>
         <LazyLoadImage
-          style={{ display: 'flex', alignItems: 'center', marginTop: '100px' }}
           src={'https://cafecity.az/static/assets/img/takeaway.png'}
+          style={{ margin: '100px' }}
         />
 
         <div className={styles.middle_cont}>

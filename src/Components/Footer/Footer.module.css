@@ -1,10 +1,15 @@
+.main_footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   color: rgb(218, 216, 216);
   align-items: center;
   background: url('https://cafecity.az/static/assets/img/footer.jpg') no-repeat;
   background-size: cover !important;
-  height: 330px;
   margin-top: 100px;
   font-weight: 500;
   font-size: 18px;
@@ -47,6 +52,7 @@
   font-size: 20px;
   text-decoration: none;
   color: rgb(218, 216, 216);
+  transition: all 0.3s;
 }
 
 .menu:hover {
@@ -55,4 +61,80 @@
   transform: translateX(10px) scaleX(1.1);
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  filter: grayscale(1);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  transition: transform 0.5s, filter 0.3s;
+}
+
+.creator {
+  width: 100%;
+  background-color: rgb(239, 219, 178);
+}
+
+.creator_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  font-size: 20px;
+  height: 40px;
+  color: #866671;
+  font-weight: 600;
+}
+
+.git_link {
+  text-decoration: none;
+  color: #866671;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .creator_cont {
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .git_link {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .creator_cont > span {
+    margin-right: 15px;
+    margin-right: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .creator_cont {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .git_link,
+  .creator_cont > span {
+    padding: 0;
+    margin: 0;
+  }
 }

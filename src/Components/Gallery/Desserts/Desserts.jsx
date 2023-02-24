@@ -3,22 +3,18 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './Desserts.module.css';
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
+import { useFetch } from '../../../utils/exporter';
 
-export default function Desserts({ data }) {
-  const header = data?.header;
-  const products = data?.products;
+export default function Desserts() {
+  const { data } = useFetch(undefined, 'dessertsPage');
+  const header = data?.dessertsPage.header;
+  const products = data?.dessertsPage.products;
 
   return (
     <div className="desserts">
       <section className={styles.dessert}>
         <h2 className="header">{header}</h2>
-        <Box
-          style={{
-            display: 'grid',
-            gap: '36px',
-            gridTemplateColumns: '1fr 1fr 1fr',
-          }}
-        >
+        <Box className={styles.desserts}>
           {products?.map((product, i) => {
             const { img, info } = product;
             return (

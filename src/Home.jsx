@@ -1,23 +1,20 @@
-import React, { lazy } from 'react';
-import ControlledCarousel from './Components/Slider/Slider';
+import React from 'react';
 import About from './Pages/About/About';
-import TakeAway from './Components/TakeAway/TakeAway';
-import Desserts from './Components/Gallery/Desserts/Desserts';
-import Gallery from './Components/Gallery/Dishes/Gallery';
+import {
+  Gallery,
+  TakeAway,
+  Desserts,
+  ControlledCarousel,
+} from './Components/exporter';
 
-export default function Home({ data }) {
-  const slider = data?.slider;
-  const dessertsPage = data?.dessertsPage;
-  const gallery = data?.gallery;
-  const about = data?.about;
-
+export default function Home() {
   return (
-    <div>
-      <ControlledCarousel data={slider} />
-      <Desserts data={dessertsPage} />
-      <About data={about} />
-      <Gallery data={gallery} />
+    <main>
+      <ControlledCarousel />
+      <Desserts />
+      <About />
+      <Gallery />
       <TakeAway />
-    </div>
+    </main>
   );
 }

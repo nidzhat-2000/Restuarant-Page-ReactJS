@@ -1,0 +1,19 @@
+{
+  "dessertsPage": {
+    "header": "Our Desserts",
+    "products": [
+      {
+        "img": "https://ozsut.az/uploads/apps/owphoto/365x470/2A936883558D010884.png",
+        "info": "The colors of our ice creams and cakes are given by fresh, fresh fruits grown under the country's bright sun."
+      },
+      {
+        "img": "https://ozsut.az/uploads/apps/owphoto/365x470/9D36753408999A1950.png",
+        "info": "In our cakes, we only use our carefully prepared creams with real recipes."
+      },
+      {
+        "img": "https://ozsut.az/uploads/apps/owphoto/365x470/55183610489D64801A.png",
+        "info": "We only add daily fresh milk from private farms to our sweets."
+      }
+    ]
+  }
+}
