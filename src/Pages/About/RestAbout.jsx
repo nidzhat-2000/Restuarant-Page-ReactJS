@@ -3,8 +3,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import styles from './About.module.css';
 
 export default function RestAbout({ data }) {
-  console.log('rendered for nothing');
-
   return (
     <div>
       <p className={styles.info}>
