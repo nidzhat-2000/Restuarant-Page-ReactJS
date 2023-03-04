@@ -1,0 +1,32 @@
+.leaflet-touch {
+  height: 400px;
+  width: 100%;
+}
+
+.cluster-icon {
+  width: 10px;
+  height: 10px;
+  background-color: #efdbb2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-25%, -25%);
+  font-size: 20px;
+}
+
+.popup {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(139, 103, 97);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background-color: #efdbb2;
+}
+
+.leaflet-popup {
+  margin-bottom: 40px;
+}
