@@ -1,6 +1,9 @@
 import React from 'react';
+import useTitleSetter from '../../utils/pageTitleSetter';
 
 const Interier = () => {
+  useTitleSetter('Interier');
+
   return (
     <div
       style={{

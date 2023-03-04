@@ -5,6 +5,7 @@ import {
   linkIssuesFixer,
   useDataProvider,
   useFetch,
+  useTitleSetter,
 } from '../../utils/exporter';
 import { WelcomeMenu, MenuGallery, SubMenuNames } from './exporter';
 
@@ -14,6 +15,7 @@ export default function Menu() {
   const openSubMenus = pathname.lastIndexOf('/');
   const { data, isLoading } = useFetch('../../', 'menu2', pathname);
   const menu = data?.menu;
+  useTitleSetter('Menu');
 
   const { providedData } = useDataProvider(
     menu,

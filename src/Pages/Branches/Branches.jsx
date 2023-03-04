@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useFetch } from '../../utils/exporter';
+import { useFetch, useTitleSetter } from '../../utils/exporter';
 import styles from './Branches.module.css';
 import LeafMap from './Map/LeafMap';
 import { markers } from './Map/mapData';
@@ -8,6 +8,7 @@ export default function Branches() {
   const { data: branches } = useFetch(undefined, 'restaurants');
   const [branch, setBranch] = useState('');
   const [centerBranch, setCenterBranch] = useState(null);
+  useTitleSetter('Branches');
 
   useEffect(() => {
     if (branch !== '') {

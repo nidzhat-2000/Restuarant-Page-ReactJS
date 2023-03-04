@@ -1,6 +1,9 @@
 import React from 'react';
+import useTitleSetter from '../../utils/pageTitleSetter';
 
 export default function OurTeam() {
+  useTitleSetter('Team');
+
   return (
     <div
       style={{

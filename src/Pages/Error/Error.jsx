@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitleSetter from '../../utils/pageTitleSetter';
 
 const Error = () => {
+  useTitleSetter('Not Found');
+
   return (
     <div style={{ textAlign: 'center', marginTop: '100px' }}>
       <h2>This page doesn't exist </h2>

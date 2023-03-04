@@ -1,8 +1,11 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import useTitleSetter from '../../utils/pageTitleSetter';
 import styles from './About.module.css';
 
 export default function RestAbout({ data }) {
+  useTitleSetter('About');
+
   return (
     <div>
       <p className={styles.info}>
